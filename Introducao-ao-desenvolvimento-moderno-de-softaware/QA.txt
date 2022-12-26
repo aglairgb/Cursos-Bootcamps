@@ -1,0 +1,10 @@
+Quality Assurance (QA)  <q uei>
+
+- QA pode ser definida como um conjunto de ações que as empresas realizam com o objetivo de entregar aos consumidores um produto ou serviço com alto nível de qualidade. No desenvolvimento de software, aplicar os métodos de QA geram confiança e segurança aos clientes, indicando que os seus produtos terão a qualidade esperada na etapa de implantação.
+- O profissional de Quality Assurance deve ter conhecimento sobre as atividades do projeto, além de ter um perfil analítico. Ele verifica se os padrões de qualidade estão sendo atendidos e se todos os requisitos mínimos esperados no produto serão entegues.
+- Cuida da qualidade do software.
+- Verifica se não possui bugs no código.
+- Verifica se o caminho para uma alteração, ela está sendo executada da maneira correta.
+- O profissional analisa se os requerimentos são respondidos de forma correta, caso não, faz relatórios e envia ao programador.
+- Tanto front quanto back.
+- Analisa os erros e envia ao programador.
