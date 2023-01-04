@@ -1,0 +1,20 @@
+<<objetos>>
+
+- Uma coleção dinâmica de chave e valor.
+- coleção de dados o que contém dentro.
+
+const vittorya = {
+  nome: "Vittorya Aglair",
+  idade: 21,
+};
+
+console.log(vittorya.nome);
+console.log(vittorya);
+
+pode adc fora:
+vittorya.altura = 1.56;
+
+pode excluir:
+delete vittorya.altura;
+
+* uma função dentro de um objeto é chamado de método
