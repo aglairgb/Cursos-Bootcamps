@@ -13,6 +13,6 @@ já em const vc n pode fazer esta alteração, pq é constante.
 
 */
 
-var soma = 9+1;
+let soma = 9+1;
 console.log(`O valor da soma é ${soma}`)
 
