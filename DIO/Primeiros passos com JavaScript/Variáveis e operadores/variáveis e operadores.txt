@@ -1,0 +1,24 @@
+executa node vscode:
+node nomedoarquivo
+
+imprimir mensagem:
+console.log ("texto");
+
+variáveis
+let idade = 10;
+
+constantes
+const nome = "Vittorya";
+
++ - 
+* mult
+/ div
+
+não usa virgula e sim ponto e virgula, pq o padrão é inglês.
+1.56 
+
+arredondamento casas decimais 
+exemplo.toFixed(2)
+
+fractionDigits = números após casa decimal
+

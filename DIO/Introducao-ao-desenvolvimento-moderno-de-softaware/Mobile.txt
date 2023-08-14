@@ -1,0 +1,16 @@
+Desenvolvimento mobile: Android
+- java, kotlin...
+
+- back end pode ser o mesmo do web.
+- Android Studio (IDE)
+
+Desenvolvimento mobile: IOS
+- Swift
+- Xcode (IDE)
+
+Desenvolvimenti híbrido (web)
+
+- Atende tanto no Android/IOS
+- Com um único código, consigo criar aplicativos para ambos dispositivos
+- ionic, flutter, react native	(biblioteca)
+

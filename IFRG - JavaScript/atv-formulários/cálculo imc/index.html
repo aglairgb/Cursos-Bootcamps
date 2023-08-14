@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./imc.js"></script>
+</head>
+<body>
+    <h1>IMC</h1>
+
+    <form onsubmit="return calcularImc()">
+        <label for="peso">Peso:</label><input type="text" id="peso" name="peso">
+        <br>
+        <label for="altura">Altura:</label><input type="text" id="altura" name="altura">
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <h2>Log de Ocorrência</h2>
+    <div id="log"></div>
+
+
+</body>
+</html>

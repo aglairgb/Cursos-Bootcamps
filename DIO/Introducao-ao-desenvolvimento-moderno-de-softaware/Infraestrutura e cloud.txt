@@ -1,0 +1,28 @@
+Modelo Cliente-Servidor
+
+- O modelo cliente-servidor é uma estrutura de aplicação que distribui as tarefas e cargos de trabalho entre os fornecedores de um recurso ou serviço, designados como servidores, e os requerentes do serviço, designados como clientes.
+
+servidor = serve um serviço.
+
+Atividades e profissionais em NUVEM PRIVADA:
+1- Segurança da tencologia da informação (lógica e física)
+2- Mão de obra especializada (Software e hardware)
+3 - Infraestrutura local
+- Há S.O específicos para servidores (windows/linux)
+
+CLOUD
+
+NUVEM PÚBLICA
+- Os sistemas em nuvem são sistemas de armazenamentos de dados disponibilizados via internet, em vez de servidores físicos tradicionais. Hoje, muitas organizações estão migrando o armazento de dados de servidores físicos para sistemas baseados em nuvem.
+- Amazon web services, Google Cloud platform, Alibaba cloud, liquid web, azure, oracle cloud, salesforce...
+
+Vantagens de migrar para a nuvem pública
+- Preço (pague somente o que usar)
+- Facilidade de contratação, configuração e infrestrutura
+- Escabilidade
+- Performance
+
+Profissional Cloud Computing
+- O profissional cloud computing é responsável pela infraestrutura de nuvem oferecida aos clientes. Mais do que desenhar sistemas ou ambientes de TI, ele escolhe as tecnologias que serão usadas, quais operadores são mais interessantes, como as peças vão ser integradas e, no fim, cuida do que foi construído.
+
+ 
