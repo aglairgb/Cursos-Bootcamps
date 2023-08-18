@@ -1,0 +1,146 @@
+git pull -> puxa todas as alterações do repositório remoto para o local (busca e mescla)
+
+git push -> empurra as alterações do repositório local para o remoto
+
+github  - mascote (octocat)
+
+primeira config git:
+git config --global user.name "aglairgb"
+git config--global user.email "aglairgb@hotmail.com"
+
+confirmação:
+git config --global user.name
+git config--global user.email
+
+mostra branch padrão:
+git config init.defaultBranch
+
+mudar globalmente branch padrão
+git config --global init.defaultBranch main
+
+retorna todas config - email/name/branch atual
+git config --global --list
+
+salva credenciais temporariamente
+git config --global credential.helper.cache
+
+salva credenciais permanentemente
+git config --global credential.helper.store
+
+ valor definido armazenamento de senhas token
+git config --global credential.helper
+
+se quiser alterar o tipo
+git config --global credential.helper [store] 
+
+visualizar onde foi armazenada credential store
+git config --global --show-origin credential.helper
+
+exibe o conteúdo do arquivo
+cat
+
+visualizar chaves ssh presentes na máquina
+ls -al ~/.ssh
+
+visualizar percurso de camiho no bash
+pwd
+--------------------------------------------------------------
+tutorial de add ssh
+add seu email -> add o agente -> vc entrega sua chave privada ao agente -> add chave pública ao github.
+1) ssh-keygen -t ed25519 -C "seuEmail@hotmail.com"
+2) eval "$(ssh-agent -s)"
+3) ssh-add ~/.ssh/id_ed25519
+4) cat ~/.ssh/ed25519.pub  -> cola no github
+---------------------------------------------------------------
+clonar repositorio modificando o nome da pasta
+git clone "url-https/ssh" nome-da-pasta
+
+mostra repositórios remotos vinculado
+git remote -v
+
+add repositório local ao remoto
+git remote add origin "url-github"
+
+fazer clone de apenas 1 branch
+git clone url --branch nome-da-branch --single-branch
+*se n setar qual vc quer baixar, irá selecionar a principal (main/master)
+
+push repositório já existente
+git remote add origin link-github
+git branch -M main
+git push -u origin main
+
+exibir status da nossa árvore de trabalho
+git status
+
+cria arquivo vazio
+touch nome-do-arquivo
+
+excluir pastas com arquivos bash
+rm - rf
+
+maneira mais fácil de escrever readme
+readme.so
+
+-- git não reconhece arquivos vazios --
+geralmente usam .gitkeep
+
+histórico dos commit
+git log
+
+restaurar último commit
+git restore  nome-do-arquivo
+
+como alterar a msg do último commit
+git commit --amend -m "novo-commit"
+
+desfazer commit:
+git reset --mixed nome-do-arquivo  ou   git reset nome-do-arquivo
+git restore --staged nome-do-arquivo
+
+add repositório existente
+git remote add origin link-github
+------------------------------------------------------------------- 
+push repositorio existente
+git remote add origin link-github
+git branch -M main
+git push -u origin main
+-------------------------------------------------------------------
+ao clicar "." sobre repositório, abre editor online
+
+último commit de cada branch
+git branch -v
+
+meslcar branches 
+git merge nome-da-branch
+
+excluir branch
+git branch -d nome-da-branch 
+
+visualizar commits feitos no remoto, ainda n trazidos p local
+git fetch origin main
+
+visualizar as diferenças de commit
+git diff main origin/main
+
+baixar att divergentes
+git merge origin/main
+
+clonar apenas uma branch de um repositório
+git clone url-github --branch main --single-branch
+
+após modificação local, não enviar commit att ao servidor
+git stash
+
+mostrar modificaçã arquivada
+git stash list
+
+criar nova branch
+git checkout -b nova-branch
+
+voltar arquivo arquivado - e excluir att recente
+git stash pop
+
+voltar arquivo arquivado - manter att
+git stash apply
+
