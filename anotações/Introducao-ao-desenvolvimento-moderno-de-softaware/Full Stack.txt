@@ -1,0 +1,6 @@
+Desenvolvedor Full Stack
+
+- Um Desenvolvedor Full Stack é alguém que trabalha com o back end do aplicativo, bem com o front end. Desenvolvedores Full Stack precisam ter algumas habilidades em uma ampla variedade de linguagens de programação.
+- Pode ser um profissional especialista em front end, que conhece todo processo back end.
+- Alguém que consiga trabalhar com toda linha de produção de aplicativos, websites.
+

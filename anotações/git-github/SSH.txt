@@ -1,0 +1,26 @@
+<<SSH>>
+
+- Forma segura e encriptada de conexão entre duas máquinas. No caso, com o servidor do github e configurar nossa máquina local como uma máquina confiável. Possuindo a chave pública e privada. A pública fica no github.
+
+<<Como registrar uma chave>>
+
+1:
+ssh-keygen -t ed25519 -C aglairgb@hotmail.com
+2:
+após pressionar enter, vai te solicitar uma senha, na qual não aparecerá na tela.
+3:
+Vá até onde está a chave pub e privada. Dentro do usuário, pasta .ssh (. significa pasta oculta).
+4:
+o comando "cat" visualiza conteúdo oculto. / "pwd" mostra todo caminho percorrido.
+5:
+eval $(ssh-agent -s)   
+vai aparecer algo assim:
+Agent pid 1382 (números variam)
+6:
+
+entrega pub ao github
+
+agora vamos entregar a chave ao agente:
+ssh-add (passa o caminho da chave, nesse caso já está dentro) (privada)
+ssh-add id_ed25519
+após isso vai pedir a senha.
