@@ -1,0 +1,17 @@
+Destructuring de objetos -> cria variáveis para colocar propriedades de um objeto que recebe
+um objeto.
+
+Exemplo:
+
+  const pessoa = {
+  nome: "João",
+  sobrenome: "Silva",
+  idade: 30,
+};
+
+// Destructuring de objeto
+const { nome, sobrenome, idade } = pessoa;
+
+console.log(nome);      // Saída: João
+console.log(sobrenome); // Saída: Silva
+console.log(idade);     // Saída: 30
