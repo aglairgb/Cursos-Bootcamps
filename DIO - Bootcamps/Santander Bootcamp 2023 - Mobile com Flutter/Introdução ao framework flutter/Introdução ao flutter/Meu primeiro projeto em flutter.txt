@@ -1,0 +1,22 @@
+Criando projeto em Flutter
+
+flutter create
+or
+flutter create -t app --org com.companyname.packagename -a kotlin -i swift myapp
+[
+-t    passa o template (padrão app)
+--org com.companyname.packagename  (para subir na playstore)
+                 [--org com.aglair.dioapp]
+-a (definir padrão linguagem no android)
+-i (definir padrão linguagem ios)
+myapp   (nome da aplicação que vamos fazer)
+
+flutter run    -> na pasta do projeto após criação.
+]
+
+Estrutura vscode
+.dart_tool (arquivos de configuração)
+android (onde há todos códigos da aplicação android)
+ios (onde há todos códigos da aplicação ios)
+pubspec.yaml  ( onde importa links, imgs, fonts)
+lib-main.dart (Primeiro código a ser executado)
