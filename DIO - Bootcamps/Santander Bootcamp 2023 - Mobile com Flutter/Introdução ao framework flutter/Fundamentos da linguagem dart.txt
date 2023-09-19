@@ -1,0 +1,140 @@
+void main() {
+ // <<String>>
+
+//Definindo variáveis
+String exemplo = " dio ";
+var exemplo2 = "Trilha de Flutter com dio";
+String teste = "aaaaaaaaaa"; 
+String teste2 = "teste2_teste1";
+
+//Comparação se vazio
+print(exemplo.isEmpty);
+print("".isEmpty);   //true
+print(" ".isEmpty);  //false
+
+// Obtém o tamanho da string
+print(exemplo.length);
+print(exemplo2.length);
+ 
+//Maíscula/Minúscula
+print(exemplo.toUpperCase());
+print(exemplo2.toLowerCase());
+
+//Se uma string contém na outra [contains]
+print(exemplo2.contains(exemplo));
+
+//Obtém parte da String a partir de numeração definida
+print(exemplo.substring(0));
+print(exemplo2.substring(0,6));
+
+//Obtém posição de um texto em uma string
+print(exemplo2.indexOf("dio"));
+
+//Substitui string
+print(teste.replaceAll("a", "@"));
+
+//Deleta string e separa por vírgula  
+print(teste2.split("_")); // teste2, teste1
+
+//Deleta espaços  
+print(exemplo.trim()); 
+}
+---------------------------------------------
+// boolean
+bool valor1 = false;
+var valor2 = true;
+// bool vaFalse; false é padrão
+------------------------------------------
+Similaridades com js:
+- forma de declaração de variáveis;
+- recebe que; igualdade de valor; igualdade de valor e tipo (=; ==; ===)
+- negação com "!"
+------------------------------------------
+Tipos de dados list
+void main (List <String> arguments) {
+  List <String> lsString = [];
+  var lsInt = [1,10,50];
+  List lstDynamic = [];
+
+// Tamanho da lista
+print(lsInt.length);
+
+//Adicionar itens 
+lsString.add("M");
+lsInt.add(90);
+lsDynamic.add(true);
+
+//Remover itens
+lsString.remove("M")
+
+//Verifica lista nula
+print(lsString.isEmpty);
+print(lsString.isNotEmpty);
+
+//Verifica se valor contém na lista
+print(lsString.contains("B"));
+print(lsDynamic.contains(true));
+
+//Function where
+print(lsInt.where((x) => x > 9 && <99));
+----------------------------------------------------
+//Map
+- Tipo de variável que permite várias chaves e valor dentro delas.
+- Similar ao objeto em js.
+}
+-------------------------------------------------
+<<Dados constantes>>
+
+void main(List <String> arguments) {
+   const String variavel = "ABC";
+   const int variavel1 = 1;
+   const bool variavel2 = true;
+}
+------------------------------------------
+<<Tipos de dados dinâmicos>>
+
+voi main(List <String> arguments) {
+   dynamic var1 = "ABC"; 
+   var1 = 99;
+   var1 = true;
+   var1 = DateTime(2023,18,09);
+}
+
+- dynamic não possui auto-complete mas funciona .length etc
+----------------------------------------
+<<DateTime>>
+
+void main (List <String> arguments) {
+    DateTime data1 = DateTime.now();
+    data1 = DateTime.parse("2022-02-01 00:20:05");
+
+// Partes da data
+print(data1);
+print(data1.day);
+print(data1.month);
+print(data1.year);
+print(data1.hour);
+print(data1.minute);
+print(data1.second);
+}
+
+//Dia da semana
+print(data1.weekday);
+
+//Soma de datas
+print(data1.add(Duration(days: 1)));
+
+//Subtrair datas
+print(data1.subtract(Duration(hours: 1)));
+
+var data2 = DateTime.parse("2022-02-01 00:00:00");
+// var1 é depois de var2?
+print(data1.isAfter(data2));
+//var1 é antes de var2?
+print(data1.isBefore(data2));
+//comparação
+print(data1.compareTo(data2));
+// false = antes; 0 = igual; true = depois.
+-------------------------------------------------------------
+Quais formas a linguagem dart é compilada?
+ahead-of-time e just-in-time
