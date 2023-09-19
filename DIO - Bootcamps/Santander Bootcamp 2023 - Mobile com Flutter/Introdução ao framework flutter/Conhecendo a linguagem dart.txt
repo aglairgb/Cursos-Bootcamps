@@ -1,0 +1,95 @@
+-----------------------------------xx--------------------
+Compilado X Interpretado
+
+- Pode ser compilada de duas formas diferentes: ahead-of-time (AOT) e just-in-time (JIT).
+
+- ahead-of-time: quando o código já é compilado para  a linguagem nativa, possibilitando uma alta performance.
+
+- just-in-time: código é compilado com a aplicação em execução, possibilitando o hot-reload.
+-------------------------------xx--------------------
+Aplicabilidade do Dart
+- console 
+- REST
+- webSocket
+- Flutter
+-----------------------------xx------------------------
+Criação do projeto dart
+dart create <nome_diretorio>
+dart create meu_app
+-
+cd meu_app
+dar run
+-
+abrir vscode ->     code .
+-
+executar dart run (f5) independente da pasta bin -> aperta f5 fora - launch.json - "program:bin/meu_app"
+-
+edições fica na lib, enquanto pasta principal na bin
+-------------------------xx------------------
+Lógicos
+==
+!=
+&&
+||
+------------------------------------------
+Matemáticos
++
+-
+*
+/
+%
+--------------------------------------
+Condicionais
+if
+else
+else if
+ternário
+switch case
+------------------------------------------
+Laços
+for
+foreach
+while
+do while
+-------------------------------------
+funções
+int calculate(){
+   return 5*5;
+} 
+-------------------------------------------
+orientação a objetos
+class carro {
+   int _rodas = 0; 
+   string _cor = "";
+
+   carro(string cor, int rodas) {
+   this._cor = cor;
+   this.rodas = rodas;
+}
+}
+--------------------------------------------
+exceções
+try {
+  var a = 10 / 0;
+  } catch (e) {
+    print ("Erro: $e");
+}
+---------------------------------------------
+tipos de dados
+int exemplo: [int numero1 = 1], [var numero2 = 2]
+double
+String exemplo: [String texto = "DIO"], [var texto2 = "DIO";]
+bool
+
+list e list<> 
+List<String> lista = [];
+  lista.add("A");
+  var lista1 = [];
+  lista1.add(1);
+
+
+map - chave/valor
+constant 
+dynamic - recebe todos tipos
+date
+----------------------------------------------
