@@ -7,14 +7,19 @@
 [![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)]()
 <br>
 ## Em andamento:
-| Bootcamp | Carga horária | Cursos | Desafios de projetos | Desafios de código |
-| ------------- | ---- |----------|---------|-------------|
-| Santander Bootcamp 2023 - Mobile com Flutter | 89h | 31 | 7 | 10 | 
+| Bootcamp | Carga horária | Cursos | Desafios de projetos| 
+| ------------- | ---- |----------|---------|
+| Formação Cybersecurity Specialist | 22h | 17 | 2 |
 
 ## Concluído:
 | Curso | Carga horária |
 | ------------- | ---- |
 | IFRG - JavaScript | 30h |
+
+| Curso | Carga horária |
+| ------------- | ---- |
+| Mobile com Flutter | 89h |
+
 
 <div/>
 
