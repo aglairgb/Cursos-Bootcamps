@@ -1,0 +1,79 @@
+2- Fundamentos de cibersegurança
+ <<Introdução>>
+- Abordamento de tópicos fundamentais para iniciar.. focando em termos, conceitos e boas práticas.
+
+ <<Cibersegurança - O que é?>>
+- Conjunto de ações e técnicas para proteger sistemas, programas, redes e equipamentos contra invasões.
+- Tem foco em garantir que dados valiosos não vazem ou sejam violados em ataques cibernétcos. 
+ * Sobre Cibersegurança:
+- Brasil é o segundo país do mundo em que mais ocorre ciberataque.
+- Mais de 439 mil tentativas de invasões de ataques de negação de serviço distribuído (DDoS) registrados no EUA.
+ * Função da cibersegurança:
+- Voltada para softwares, hardwares e redes.
+- Previne problemas com a gestão de informações.
+- Protege dados armazenados.
+ * Tipos de cibersegurança:
+- Segurança operacional
+- Segurança de rede
+- Segurança de aplicativos
+- Educação do usuário final
+- Recuperação de desastres.
+
+  <<O que é hacking?>> 
+- Conceito: Comprometimento do sistemas de computadores, contas pessoais, redes de computadores ou dispositivos digitais. Porém não significa necessariamente um ato mal-itencionado, pois o termo pode ser utilizado para o uso da tecnologia ou um conhecimento para contornar um desafio com finalidades legítimas.
+- Cracker: Quando um hacker invade uma rede ou sistema, violando a segurança, de forma maliciosa, estamos falando na verdade de um cracker.
+  * Tipos:
+- Black hat
+- White hat
+- Grey hat
+  * Conceitos:
+- Black Hat: Para fins maliciosos, comprometimento de sistemas e extorsão.
+- White Hat: Hacker ético, utiliza os conhecimentos e tecnologia para detectar ameaças e proteger sistemas com base de acordos e contratos.
+- Grey Hat: Intermediário. Invasor sem permissões que descobre falhas no sistema e oferece uma solução.
+
+  <<Principais tipos de cibersegurança>>
+- As ameaças não são direconadas apenas contra os sistemas ou as redes de computadores de uma organização, mas também contra as pessoas que fazem parte da mesma.
+  * Tipos de ataques:
+- Phishing [scripts maliciosos para roubo de dados]
+- Spoofing de DNS [comprometimento de servidor, tráfego direcionado a outra máquina]
+- Roubo de cookies [roubo de dados de acesso]
+- XSS 
+- SQL injection 
+
+  <<Boas práticas em cibersegurança>>
+- Existem uma série de boas práticas que envolvem desde a utilização de sistemas seguros e confiáveis, até a mudança de comportamentos dos usuários.
+  *Categorias de boas práticas:
+- Conscientização de pessoas;
+- Controle de acesso a ativos críticos;
+- Proteção de dados confidenciais;
+- Segurança robusta e proteção de rede;
+- Greenciamento de identidades.
+  * Conscientização de pessoas:
+- Abordagem de segurança centrada nas pessoas;
+- Reduzir o nível de negligência dos funcionários;
+- Informe os funcionários sobre técnicas comuns de phishing.
+  * Controle de acesso a ativos críticos:
+- Proteção ao acesso de dispositivos remotos;
+- Manipular as senhas com segurança;
+- Usar o princípio do privilégio mínimo.
+  * Proteção de dados confidenciais:
+- Atenção nos usuários privilegiados;
+- Monitoramento de acesso de terceiros aos dados;
+- Manter o backup de seus dados confidenciais.
+  * Segurança robusta e proteção de rede:
+- Uso de políticas hierárquicas de segurança cibernética;
+- Proteger a rede corporativa;
+- Auditorias regulares de segurança cibernética.
+  * Gerenciamento de identidades:
+- Empregar segurança biométrica;
+- Usar autenticação multifator.
+
+  <<BlueTeam e RedTeam>>
+- Conceito: As organizações formam times como o red team e blue team que ensaiam técnicas de ataque e defesa, visando identificar e corrigir possíveis falhas de segurança.
+  * red team: segurança ofensiva, tentar atacar, explorar, comprometer os sistemas (de forma ética, com consentimento para testes).
+  * blue team: proteção da infraestrutura, controle de danos, respostas a incidentes, segurança operacional, busca de ameaças
+  *purple team: conhecimento de ambos lados.
+  
+  * Certificações:
+- Certified ethical hacker (CEH)
+- EC-Council certified security analyst (ECSA)
