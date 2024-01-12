@@ -1,0 +1,25 @@
+1. *Conhecendo a formação cibersegurança*
+<<O que esperar dessa trilha?>>
+- Fundamentos de hacking e cibersegurança;
+- Testes de intrusão;
+- Programação para hacking;
+- Sistemas operacionais.
+
+<<O que faz um profissional de cibersegurança?>>
+ Perfil do profissional:
+- Autodidata; 
+- Atualização constante;
+- Certificações;
+- Experiência.
+ Skills:
+- Conhecimento de programação;
+- Entendimento de sistemas operacionais;
+- Entendimento linhas de comandos;
+- Conhecimento em simulação de ataque e defesa;
+- Entendimento de rede de computadores.
+ Áreas de atuação:
+- Segurança de infraestrutura crítica;
+- Segurança de aplicativos;
+- Segurança de redes;
+- Segurança da nuvem;
+- Segurança da internet das coisas (IoT).
