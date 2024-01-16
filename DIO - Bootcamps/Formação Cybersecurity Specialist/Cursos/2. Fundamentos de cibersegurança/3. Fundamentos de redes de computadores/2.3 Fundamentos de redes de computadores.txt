@@ -1,0 +1,172 @@
+<<Introdução>>
+Etapa 1: Conceitos de redes de computadores
+Etapa 2: Componentes de redes de computadores
+Etapa 3: Protocolos de redes de computadores
+Etapa 4: Endereço de IP
+Etapa 5: Privacidade com Proxy e VPN
+
+<<Conceitos de redes de computadores<>
+- Redes de computadores referem-se a dispositivos de computação interconectados que podem trocar dados e compartilhar recursos entre si. 
+- Esses dispositivos em rede usam um sistema de regras, os protocolos de comunicação, para transmitir informações por meio de tecnologias físicas ou sem fio.
+
+* Termos e conceitos:
+- NÓS: equipamento conectado à rede (computador, hub, switch, terminal, etc);
+- LINKS: meio de transmissão que conecta dois nós, podendo ser físico ou sem fio.
+- ARQUITETURA: define as especificações para os componentes físicos da rede, organização funcional, protocolo e procedimentos, regras de acesso.
+- Endereço IP: número exclusivo atribuído a cada dispositivo conectado à rede.
+- Portas: identifica uma conexão específica (protocolos).
+  ex: 192.168.10.15:8080    Ip address: Port number
+
+Tipos de arquiteturas de redes
+O design de uma rede de computadores é enquadrado em duas grandes categorias:
+
+*Cliente servidor 
+- Uma máquina (servidor) centraliza a comunicação para os demais computadores.
+- Nessa arquitetura os nós podem ser servidores ou clientes. Os servidores fornecem recursos como memória, capacidade de processamento ou dados aos nós clientes.
+
+*Ponto a ponto (P2P)
+- Todas máquinas estão configuradas podendo ser servidor e cliente, não está exclusiva em um servidor isolado. Caso ocorra queda do servidor de um ponto, basta conectar em outro.
+- Nesta arquitetura os computadores conectados têm capacidades e privilégios iguais, sem um servidor central para coodenação. Cada dispositivo na rede de computadores pode atuar como cliente ou servidor.
+
+* Topologias de redes:
+- A disposição de nós e links é chamada de topologia de rede, podendo ser configurados de maneiras diferentes para obter resultados distintos.
+Tipos:
+- Barramento
+- Anel
+- Estrela
+- Malha
+
+* Topologia em barramento (bus):
+- Todos os dispositivos estão conectados a um único canal de comunicação, chamado barramento. Quando um dispositivo quer transmitir dados, ele coloca os dados no barramento, e todos os outros dispositivos na rede podem ver esses dados. Cada dispositivo tem um endereço único para que saiba se a mensagem é para ele.
+
+* Topologia em anel (ring):
+- Cada nó está vinculado a dois outros nós, formando um anel. Os dados podem fluir bidirecionalmente. No entanto, a falha de um único nó pode desativar toda a rede.
+
+* Topologia em estrela (star):
+- Rede organizada em um hub central. Qualquer dado enviado pela rede viaja pelo hub central antes de terminar em seu destino.
+
+* Topologia em malha (Mesh):
+- Os nós são interconectados. Os modos full-mesh conectam todos os dispositivos na rede diretamente. Em uma topologia de malha parcial, a maioria dos dispositivos se conecta diretamente. Isso oferece vários caminhos para entrega de dados. Os dados são entregues pela distância mais curta disponível para transmissão.
+
+* Topologia árvore:
+- Um nó central conecta hubs secundários. Esses hubs têm uma relação pai-filho com os dispositivos. O eixo central é como o tronco da árvore. Onde as ramificações se conectam estão os hubs secundários ou nós de controle e, em seguida, os dispositivos conectados são anexados aos branches.
+
+* Tipos de redes:
+- LAN (Local Area Network): Conecta dispositivos próximos, em um mesmo ambiente.
+- MAN (Metropolitan Area Network): Redes locais, distâncias maiores.
+- WAN (Wide Area Network): Internet que conhecemos.
+- SAN (Storage Area Network): Dados da rede e comunicação de servidor a demais dispositivos.
+- VLAN (Virtual LAN): Redes locais mesmo em locais distintos.
+
+<<Protocoloss de redes de computadores>>
+- Procolos de rede são um conjunto de normas que permitem que máquinas conectadas em redes possam se comunicar entre si. 
+- Funcionam como uma linguagem universal para que dispositivos distribuídos ao redor do mundo possam se comunicar de forma padronizada.
+
+* Modelos de camadas
+- Os modelos de camadas definem regras e orientações para que haja a intercomunicação entre os dispositivos de redes, independente dos modelos ou fabricantes. 
+- Na transmissão, cada camada realiza seu trabalho e o entrega para a camada inferior.
+- O agrupamento em camadas facilita a análise do processo de comunicação por: 
+1. Delimitar as funções das regras de comunicação (protocolos), dos serviços e das interfaces;
+2. Servir como referência de comparação entre protocolos e serviços de pilhas diferentes.
+
+Existem dois modelos de camadas utilizados atualmente, os modelos OSI e TCP/IP:
+
+*OSI*
+ 
+Características:
+- Decomposição dos componentes da rede em partes que são menores.
+- Padronização dos componentes presetes na rede.
+- Comunicação entre diversos tipos de hardware e software.
+- Evita que alterações em uma camada afete as configurações de outra.
+
+Divide as funções em 7 camadas:
+- Aplicação
+- Apresentação
+- Sessão
+- Transporte
+- Rede
+- Enlace
+- Física
+
+*TCP/IP*
+- No início, o modelo OSI foi primeiro a ser utilizado, sendo base para nomenclaturas e para as redes, atualmente o modelo TCP/IP tem sido mais utilizado em todo o mundo tanto nas redes que são internas como também nas externas.
+
+O modelo TCP/IP possui 4 camadas:
+- Aplicação
+- Transporte
+- Internet
+- Acesso a internet
+
+*OSI vs TCP/IP
+- OSI: 7 camadas - TCP/IP: 4 camadas
+- O TCP/IP mesclou as camadas 1 e 2 do OSI para a camada aplicação
+- Há uma camada chamada de internet em TCP/IP enquanto que a mesma é chamada de redes no OSI.
+
+*Principais protocolos de redes:
+- A rede é dividida em camadas, cada uma com uma função específica. Os diversos tipos de protocolos de rede variam de acordo com o tipo de serviço utilizado e a camada correspondente.
+
+- Camada de aplicação: WWW, SMTP, Telnet, FTP, SSH, NNTP, RDP, IRC, SNMP, POP3, IMAP, SIP, DNS, PING
+- Camda de transporte: TCP, UDP, RTP, DCCP, SCTP
+- Camada de internet: IPV4, IPV6, IPSEC, ICMP
+- Camada de acesso à rede: Ethernet, modem, PPP
+
+* Portas e protocolos:
+- Ao realizar a comunicação entre dispositivos, por meio de protocolos, são utilizadas portas numeradas
+
+<<Endereço IP>>
+- É um endereço exclusivo que identifica um dispositivo na internet ou em uma rede local.
+- IP vem do inglês "Internet Protocol" que consiste em um conjunto de regras que regem o formato de dados enviados pela internet ou por uma rede local
+- É uma sequência de números separados por pontos, representado por um conjunto de quatro números ocnehcidos como octetos, como por exemplo 192.168.1.38.
+- Grupos em conversão para binário ficam octetos.
+
+* Máscara de rede:
+- A máscara de rede tem 32 bits, assim como o endereço IP, tendo como finalidade mascarar uma parte do endereço IP, assim todo endereço IP tem uma máscara correspondente, servindo para identificar qual parte do endereço é da rede e qual é do host.
+
+* Classes de IP
+- As principais são a classe A, classe B, classe C
+- Com base nos primeiros bits (prefixo) de um endereço IP, podemos determinar a qual classe pertence um endereço IP.
+
+Exemplo:
+- Classe de endereçamento A: 255.0.0.0
+- Classe de endereçamento B: 255.255.0.0
+- Classe de endereçamento C: 255.255.255.0
+
+Originalmente, o espaço de endereço IP foi dividido estruturas de tamaho fixo designadas de "classes de endereço"
+
+*IPV4 e IPV6*
+
+IPV4:
+- 32 bits
+4.3 bilhões de endereços
+exemplo: 192.168.1.100
+
+IPV6:
+- 128bits
+- 7.9x10^28 endereços
+exemplo:  50b2:6400:0000:0000:6c3a:b17d:0000:10b6
+
+*Ataques contra Ip's
+- Engenharia social
+- Ciberstalking
+- Download de conteúdo ilegal usando seu endereço IP
+- Rastrear sua localização
+- Ataque direto à sua rede
+- Ataques em seu dispositivo
+
+<<Privacidade com Proxy e VPN>>
+
+VPN:
+- As redes privadas virtuais (VPNs) e os proxies são uma solução potencial porque adicionam uma camada extra entre um navegador e qualquer empresa de rastreamento de dados ou governo.
+- Uma VPN é uma rede privada que codifica os dados enviados para ou recebidos da internet, permitindo acessar websites de forma segura, privada e usar programas e aplicativos, independendo da rede utilizada.
+*Vantagens:
+- Como a vpn criptograda a conexão, os hackers potenciais não podem "escutar" a transmissão para roubar dados vulneráveis
+- Também evita que um provedor ou empregador espie o tráfego, rastreando o tráfego do roteador.
+
+Proxy:
+- Um servidor proxy é normalmente um servidor público remoto acessado através de um aplicativo web ou programa desktop que acessa páginas web 'em seu nome'.
+- Na maioria das vezes a palavra proxy, se refere a servidor proxy HTTP
+- Estes servidores proxy são servidores web que acessam uma página web pela internet e depois encaminham os dados para o navegador.
+
+
+
+
