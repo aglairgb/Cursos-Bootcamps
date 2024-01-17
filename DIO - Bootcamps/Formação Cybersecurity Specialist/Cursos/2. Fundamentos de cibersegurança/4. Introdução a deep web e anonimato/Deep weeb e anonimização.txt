@@ -1,0 +1,30 @@
+<<Introdução>>
+
+- Nese curso vamos explorar os conceitos e práticas sobre deep web, dark web e navegação anônima.
+
+Etapa 1: Deep web e dark web
+Etapa 2: Instalando o tails linux no virtualbox
+Etapa 3: Configurando uma vpn para navegar na web
+Etapa 4: Navegação anônima com vpn
+Etapa 5: Navegação anônima com proxy
+
+<<Dark web e Deep web>>
+
+* Camadas na internet
+- A internet é composta de camadas, no que se refere ao nível de indexação dos sites.
+
+* Surface web
+- Contém todos os sites voltados para o público comum acessados através de navegadores tradicionais como google, chrome, internet explorer e firefox.
+- São sites de domínios comuns, como .com, .org, .net
+
+A deep web é um conjunto de sites da internet que não são indexados pelos buscadores convencionais, necessitando um navegador de internet especializado para navegação.
+
+* Redes da deep web:
+- onion
+- freenet
+- l2p
+
+* Cuidados:
+- Usar uma vpn
+- Manter o antivírus atualizado
+- Utilizar máquinas virtuais
