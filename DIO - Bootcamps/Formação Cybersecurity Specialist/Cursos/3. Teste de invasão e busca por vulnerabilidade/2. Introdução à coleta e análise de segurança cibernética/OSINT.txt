@@ -1,0 +1,160 @@
+<<Introdução>>
+
+Percurso:
+Etapa 1: O que é OSINT
+Etapa 2: Pensamento OSINT
+Etapa 3: Google hacking
+Etapa 4:Conhecendo o shodan
+Etapa 5: Maltego
+Etapa 6: FOCA
+
+<<O que é OSINT?>>
+- Neste curso vamos conhecer o framework OSINT, a inteligência de fontes abertas.
+- OSINT significa Open source intelligence, ou inteligência de fontes abertas, ou seja, informações abertas na internet ao público.
+  
+Para OSINT são utilizadas ferramentas voltadas para:
+- Coleta de infomações
+- Mapeamento e enumeração de serviços
+- Análise de vulnerabilidades
+- Análise de arquivos
+- Extração de metadados
+
+Tipos de fontes:
+- Blogs
+- Fóruns
+- Mídias sociais
+- Mídias tradicionais
+- Registros governamentais
+
+Uso de OSINT
+- Legislação
+- Combate a frauds
+- Recursos humanos
+- Ciersegurança
+- Operações militares
+ 
+Importância do OSINT
+- Identificar violações de dados
+- Due diligence do cliente (CDD) 
+- Descobrir vulnerabilidades
+- Apoio aos processos de tomada de decisão
+- Atualizações
+
+Benefícios do OSINT
+- Camada extra de segurança
+- Economia nos processos de decisão
+- Dados analisados conforme são atualizados
+
+Contratempos do OSINT
+- Dificuldade de filtrar os dados inúteis
+- Sem ferramenta o trabalho é moroso
+- Alta necessidade de comandos humanos
+- Não há um padrão ideal definido sobre a quantidade de informações coletadas e analisadas
+
+OSINT pode ser considerado um canivete suíço do pentester, sendo extremamente útil para preparar a defesa contra ataques maliciosos.
+
+<<Pensamento OSINT>>
+Além de ter em mãos as fontes e ferramentas para análise de dados, precisamos saber como utilizá-las da forma mais efetiva possível.
+
+Mindset osint
+osint requer uma mentalidade especial, incluindo habilidades analíticas, flexibilidade de pensamento e paciência.
+
+- Quais as fontes escolhidas?
+- Qual a confiabilidade das fontes?
+- Quais palavras chaves utilizar?
+- Quais as melhores ferramentas?
+
+<<Google hacking>>
+Nesta aula vamos falar sobre o uso de técnicas de pesquisas avançadas utilizadas no google para encontrar informações. 
+
+- O google hacking nada mais é que uma prática para encontrar arquivos/falhas a partir do google, usando ele como uma espécie de scanner, com comandos de buscas avançadas por strings chamadas de 'dorks' ou 'operadores de pesquisa'.
+- Com a composição de dorks podemos retornar domínios específicos, títulos, palavras, arquivos etc. 
+
+Dorks
+ Busca por um site específico:
+site:exemplo.com.br
+
+'intitle' Busca por título de páginas:
+intitle: '<fazer login'
+
+'inurl': Busca de termos presentes na url:
+inurl:/wp-admin
+
+'intext': Busca por texto no conteúdo do site:
+intext:adminpass
+
+'filetype': Busca por formato de arquivos (jpg, zip, txt):
+filetype:.txt 
+
+'-termo': o sinal de '-' exclui um termo da pesquisa
+
+'2021...2022:' Busca entre datas
+
+Banco de dados de dorks
+São sites com várias dorks voltadas à exploração de vulnerabilidades em sites.
+- Exploit-db
+- InurlBR
+
+<<Shodan>>
+Nesta aula vamos conhecer o shodan, 'google dos hackers', utilizado para encontrar dispositivos conectados à internet.
+
+- Lançado em 2009, é um mecanismo de busca desenvolvido pelo programador John Matherly
+- Acessado por meio de um endereço na web, busca diversos tipos de dispositivos conectados à internet
+- Esses dispositivos podem ser desde computadores, servidores, mobile até camêras abertas
+- Permite listar e filtrar dispositivos por localização, tipo de servidor, portas
+
+
+"Server: yawcam" "Mime-Type: text/html"
+"Server: IP Webcam Server" "200 OK"
+
+    city: pesquisa uma cidade;
+    country: localiza por país;
+    os: informa o sistema operacional usado;
+    port: localiza as portas abertas;
+    product: o nome do produto.
+
+<<Maltego>>
+Nesta aula vamos falar de outra ferramenta de OSINT, o Maltego
+- É um dos frameworks OSINT mais famosos para reconhecimento pessoal e organizacional.
+- É uma ferramenta GUI que permite coletar informações sobre qualquer indivíduo, extraindo as informações que estão publicamente disponíveis na internet por diferentes métodos.
+- Possui versões pagas e community, gratuitua para uso mas com funcionalidades a menos.
+
+O que o Maltego encontra?
+- Pessoas
+- Grupos de pessoas (redes sociais)
+- Empresas
+- Organizações
+- Sites
+- Domínios
+- Nomes DNS
+- Blocos de rede
+- Endereço IP
+- Afilicações
+- Documentos e arquivos
+
+Benefícios do maltego
+- O maltego pode ser útil para a fase de coleta de informações de todos os trabalhos relacionados à segurança, gerando economia de tempo, adicionando mais precisão e inteligência.
+
+<<Foca>>
+Nesta aula vamos falar de outra ferramenta de OSINT, o FOCA.
+
+- Foca signfica Fingerprinting & Organisation with Collected Archives, sendo uma ferramenta utilizada para encontrar, fazer download, analisar e extrair metadados de arquivos.
+- Podem ser arquivos como MS Office, PDF, Open Office, SVG e uma inifinidade de formatos.
+
+Permite encontrar metadados como:
+- Usuários do software
+- Versão do software
+- Pastas
+- Sistemas operacionais ...
+
+
+
+
+
+
+
+
+ 
+
+
+ 
