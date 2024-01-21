@@ -1,0 +1,85 @@
+<<O que é engenharia social?>>
+- Resumidamente, é persuafir alguém a fazer algo, sem que seja percebida a real intenção. 
+- É uma técnica empregada para induzir usuários desavisados a enviar dados confidenciais, infectar seus computadores com malware ou abrir links para sites infectados. 
+
+<<Tipos de ataques>>
+- Todos os ataques cibernéticos de certa forma utilizam um nível mesmo que mínimo de engenharia social.
+ 
+Vetores comuns de ataques:
+- Fraca encriptação de senha
+- Uso de ransomwares
+- Dispositivos mal configurados
+- Relacionamentos de confiança
+- Ataques de negação de serviço
+- Vulnerabilidade de software
+- Credenciais compremetidas
+
+Baiting (iscas)
+O criminoso cibernético deixará um dispositivo, como um pen drive, infectado com malware à vista em um local público. Alguém encontrará o dispositivo e o conectará em seu computador para ver o que ele contém, e assim o malware se injeta no computador.
+
+Para que serve o spoofing?
+O que é spoofing? | Ataques de spoofing de IP e e-mail
+Spoofing é um termo amplo para o tipo de comportamento em que um criminoso virtual se disfarça como um usuário ou dispositivo confiável para que você faça algo que beneficie o hacker e prejudique você.
+
+Scareware
+- pop up alertando algum aviso falso.
+
+Dns spoofing
+- Redirecionar o tráfego para um servidor malicioso.
+
+Physical breaches
+- Acesso a uma sala privativa, com um computador desbloqueado.
+
+Quid pro quo
+- Conseguir dados através da conversa.
+
+<<Phishing>>
+- Phishing é um crime cibernético em que um alvo ou alvos são contatados por e-mail, telefone ou mensagem de texto por alguém se passando por uma instituição legítima.
+- Busca atrair indivíduos a fornecer dados confidenciais, como informações de indentificação pessoal, detalhes bancários e de cartão de crédito e senhas.
+
+ Informações roubadas:
+- Endereço de e-mail
+- Número de identidade 
+- Localização 
+- Dados bancários
+- Contas
+- Informações de consumo
+- Credenciais...
+
+Principais meios de propagação
+- Malware
+- Chamadas de telefone
+- SMS
+- E-mail...
+
+Conclusão
+- Tem foco em emoções e medos das pessoas
+- Se camuflam atrás de pessoas e instituições legítimas
+- Os cibercriminosos continuam inovando
+- Um ataque bem sucedido basta para comprometer 
+
+<<Como se proteger?>>
+1. Educação e Conscientização:
+- Esteja ciente dos diferentes tipos de ataques de engenharia social.
+- Mantenha-se atualizado sobre as táticas mais recentes utilizadas pelos golpistas.
+
+2. Desconfiança Saudável:
+ - Verifique a autenticidade de solicitações inesperadas de informações pessoais.
+- Desconfie de mensagens ou chamadas não solicitadas, especialmente se parecerem urgentes.
+
+3. Verificação de Identidade:
+- Estabeleça protocolos de verificação de identidade para lidar com solicitações sensíveis.
+- Confirme a identidade de qualquer pessoa ou organização antes de compartilhar informações confidenciais.
+
+4. Senhas Fortes e Autenticação de Dois Fatores (2FA):
+- Utilize senhas complexas e exclusivas para cada conta.
+- Ative a autenticação de dois fatores sempre que possível para adicionar uma camada extra de segurança.
+
+5. Atualizações e Patches:
+- Mantenha seu sistema operacional, aplicativos e software de segurança sempre atualizados.
+ - Corrija imediatamente quaisquer vulnerabilidades conhecidas.
+
+6. Controle de Acesso:
+- Implemente políticas de controle de acesso para limitar o acesso apenas a funcionários autorizados.
+- Revise regularmente as permissões de acesso e ajuste conforme necessário. 
+              (...)
