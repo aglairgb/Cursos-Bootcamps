@@ -5,7 +5,7 @@
 <<Como registrar uma chave>>
 
 1:
-ssh-keygen -t ed25519 -C aglairgb@hotmail.com
+ssh-keygen -t ed25519 -C seuemail@hotmail.com
 2:
 após pressionar enter, vai te solicitar uma senha, na qual não aparecerá na tela.
 3:
@@ -15,7 +15,7 @@ o comando "cat" visualiza conteúdo oculto. / "pwd" mostra todo caminho percorri
 5:
 eval $(ssh-agent -s)   
 vai aparecer algo assim:
-Agent pid 1382 (números variam)
+Agent pid 1582 (números variam)
 6:
 
 entrega pub ao github
