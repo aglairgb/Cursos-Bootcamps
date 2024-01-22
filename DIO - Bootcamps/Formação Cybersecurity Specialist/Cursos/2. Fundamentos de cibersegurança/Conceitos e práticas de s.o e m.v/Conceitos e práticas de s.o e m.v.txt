@@ -1,0 +1,126 @@
+# Conceitos e práticas de sistemas operacionais e máquinas virtuais
+
+## **Introdução**
+
+- Neste curso vamos explorar em mais detalhes os conceitos e tipos de sistemas operacionais mais utilizados pelo mercado.
+- Conhecimento prévio de sistemas operacionais e noções de linhas de comando são úteis para facilitar o aprendizado.
+
+                                **Percurso:**
+**Etapa 1:** Conceitos base sobre sistemas operacionais
+**Etapa 2:** Microsoft Windows
+**Etapa 3:** SO'S baseados em linux
+**Etapa 4:** Virtualbox
+**Etapa 5:** Instalando o windows 7 no virtualbox
+**Etapa 6:** Instalando o Windows XP no virtualbox
+**Etapa 7:** Instalando o windows 10 no virtualbox
+**Etapa 8:** Instalando o kali linux no virtualbox
+
+## **Conceitos base sobre sistemas operacionais**
+
+- Nesta aula vamos abordar os conceitos fundamentais de sistemas operacionais.
+- Um sistema operacional é um software que atua como intermediário entre o usuário e o hardware do computador.
+- São responsáveis por traduzir as entradas do usuário para a linguagem de máquina, formando uma interface entre o usuário e o hardware, como também traduzir para o usuário as saídas geradas pelo hardware.
+
+                                        **Funções:**
+
+- Gerenciamento de processos
+- Gerenciamento de memória
+- Gerenciamento de dispositivo
+- Gerenciamento de arquivos
+- Segurança
+- Detecção de erros
+- Agendamento de tarefas
+
+                                       **Recursos:**
+
+- Fornece uma plataforma para executar aplicativos
+- Gerenciamento de memória e CPU
+- Fornece abstração do sistema de arquivos
+- Fornece suporte de rede
+- Fornece recursos de segurança
+- Fornece interface de usuário
+- Fornece utilitários e serviços de sistema
+- Suporte ao desenvolvimento de aplicativos
+
+                                        **Componentes:**
+Para executar tarefas, os sistemas operacionais possuem dois componentes:
+
+- Shell
+- Kernel
+
+**Shell:**
+
+- Shell trata das interações do usuário, sendo a camada mais externa do sistema operacional e gerencia a interação entre usuário e sistema operacional.
+
+                                           **Funções do shell:**
+
+- Solicitar entradas do usuário.
+- Interpretar a entrada para o sistema operacional.
+- Manipular a saída do sistema operacional.
+
+**Kernel:**
+
+- É o componente central de um S.O, do qual todos os outros componentes do sistema operacional dependem para fornecer serviços essenciais, atuando como a interface principal entre o S.O e o hardware.
+
+                                         Funções do kernel:
+
+- Gerenciamento de entrada-saída
+- Gerenciamento de memória
+- Gerenciamento de processos para execução de aplicativos
+- Gerenciamento de processos para execução de aplicativos
+- Gerenciamento de dispositivo
+- Controle de chamadas do sistema
+
+ **Exemplos de SO's**
+
+- Microsoft Windows
+- MacOS
+- Linux
+- Android
+
+## **Windows**
+
+- O windows é o principal sistema operacional (SO) da Microsoft, o padrão de fato para computadores domésticos e empresariais
+- É um sistema operacional baseado na interface gráfica do usuário (GUI), introduzido em 1985 e foi lançado em várias versões
+- A principal linguagem de programação do código-fonte das várias versões do windows é o C e algumas partes com C++ e Assembly
+- Até a versão 3.11, rodava 16bits (com um update chamado win32s adicionando o suporte a 32bits)
+- As versões a partir do XP e server 2003 estão preparadas para a tecnologia 64bits
+- Devido sua popularidade, o Windows é um grande alvo das emaças cibernéticas
+
+                                                   **Exemplos de vírus:**
+
+- WinNt.Remote Explorer
+- WinNt.Infis
+- Win95.CIH
+- Win32.Kriz
+- Win95.Babylonia
+
+                                                        **Prevenção:**
+
+- Manter as atualizações do SO em dia
+- Utilizar um bom antivírus
+- Cuidado e bom senso com o que acessa
+
+## **SO's baseados em Linux**
+
+- Nesta aula vamos falar sobre sistemas operacionais baseados em Linux, suas distribuições e características.
+
+                                                        **Antecedentes:**
+
+- O SO Unix implementado em 1969 por Ken Thompson, Dennis Ritchie, Douglas Mcllroy e Joe Ossana
+- Lançado pela primeira vez em 1971, era escrito em assembly
+- Em 1973 foi reescrito na linguagem C por Dennis Ritchie
+- De forma genérica, o linux é um sistema operacional, assim como windows e o Mac Os, que possibilita a execução de programas em um computador e outros diapositivos
+- O Kernel do linux foi, originalmente, escrito por linux Torvalds do departamento de ciências da computação de universidade de Helsinki, Finlândia, com a ajuda de vários programadores voluntários através da usenet
+- Porém em uma definição mais profunda e técnica linux é o nome dado apenas ao núcleo do sistema operacional, o kernel
+- É um SO Open source, ou seja, pode ser editado e distribuído sem o pagamento de royalties
+- Com base no kernel linux, varias distribuições foram criadas, com os mais diversos fins
+- Nunca haverá um S.O ou qualquer outro software infalível ou sem falhas. o linux não é uma exceção
+
+                                                           **Vulnerabilidades do linux:**
+
+- O nível da vulnerabilidade é definido pelo CVSS, Common Vulnerability Scoring System (CVSS Scores) com uma representação numérica (0-10)
+
+                                                              **Conclusão:**
+
+- Há uma gama imensa de variações de S.O baseados em Linux, o que permite a sua utilização de forma muito ampla na cibersegurança.
