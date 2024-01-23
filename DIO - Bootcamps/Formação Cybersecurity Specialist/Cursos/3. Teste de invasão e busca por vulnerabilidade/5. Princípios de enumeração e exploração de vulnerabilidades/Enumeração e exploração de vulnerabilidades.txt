@@ -1,0 +1,55 @@
+<<Introdução>>
+- Neste curso vamos aprender a enumerar portas e serviços vulneráveis.
+
+    Percurso:
+Etapa 1: O que é enumeração?
+Etapa 2: Enumeração com NMap
+Etapa 3: Utilizando Scripts no NMap
+
+<<O que é enumeração>>
+- É um processo que estabelece uma conexão ativa com os hosts de destino para descobrir possíveis vetores de ataque, podendo ser usado para exploração do sistema.
+- A etapa de varredura busca encontrar as vulnerabilidades, sem maiores detalhes, enquanto de enumeração traz mais detalhes a respeito do sistema invadido.
+
+        Informações enumeradas
+- Rede de origem
+- Usuários e grupos
+- Tabelas de roteamento
+- Configurações de auditoria
+- Configurações de serviços
+- Nomes de máquinas
+- Aplicações
+- Banners
+- Detalhes de SNMP
+- Detalhes de DNS
+ 
+      Ferramentas
+- NBTScan
+- DumpSec
+- SMBScanner
+- NMap
+- NetCat
+
+<<Enumeração com NMap>>
+- Nas etapas anteriores aprendemos a utilizar o NMap para varredura de rede, agora vamos novamente utilizá-lo para detalhar as informações varridas.
+
+------------
+   encontrar as portas:
+sudo nmap -v -T5 -sS -Pn --open IP
+
+   detalhar os serviços
+verificar o s.o da máquina
+sudo nmap -O IP
+
+        verificar versão dos serviços
+sudo nmap -A IP
+
+--------------------
+
+<<Utilizando Scripts no NMap NSE>>
+- O Nmap Scripting Engine (NSE) é um dos recursos mais poderosos e flexíveis do Nmap, permitindo que os usuários utilizem scripts para automatizar uma ampla variedade de tarefas de redes.
+
+scripts se encontram no diretório:
+/usr/share/nmap/scripts
+
+descrição do script:
+nmap --script-help exploit
