@@ -1,0 +1,88 @@
+# Conceitos e técnicas de varreduras de rede
+
+## **Introdução**
+
+- Neste curso vamos conhecer e explorar técnicas de varreduras de rede, encontrando vulnerabilidades nos dispositivos da rede.
+- Conhecimento prévio em linhas de comando linux facilita o aprendizado.
+
+                          *Etapas:*
+**Etapa 1:** O que é varredura de rede?
+**Etapa 2:** Encontrando dispositivos com NMap
+**Etapa 3:** Encontrando portas abertas com NMap
+
+---
+
+## **O que é varredura?**
+
+- Nessa aula vamos conhecer o que são varreduras (ou scan) de rede e seus perigos relacionados.
+- É uma técnica de busca minuciosa em redes, com o objetivo de identificar computadores ativos e coletar informações como, serviços disponibilizados e programas instalados.
+
+                        **Tipos de varreduras:**
+
+- Portas: listar portas e serviços
+- Redes: listar endereços de IP
+- Vulnerabilidades: listar vulnerabilidades conhecidas
+
+                        **Técnicas de varreduras:**
+
+- ICMP
+- TCP
+- UDP
+
+                      **Varredura e enumeração:**
+
+- A etapa de varredura busca encontrar as vulnerabilidades, sem maiores detalhes, enquanto a etapa de enumeração traz mais detalhes a respeito do sistema invadido.
+
+---
+
+## **Encontrando dispositivos com o NMap**
+
+- Nesta aula vamos aprender a mapear dispositivos conectados a uma rede utilizando o NMap.
+- É uma ferramenta gratuita e de código aberto usada para busca de vulnerabilidades, varredura de portas e mapeamento de rede.
+- Uma das informações obtidas pelo rastreamento é uma tabela de portas, que exibe o número de porta, protocolo, nome do serviço e estado que pode ser aberto, filtrado, não filtrado ou fechado.
+
+```jsx
+exemplo:
+nmap -v [scanme.nmap.org](http://scanme.nmap.org/): 
+```
+
+executa um scan de todas as portas TCP que estejam reservadas no host [scanme.nmap.org](http://scanme.nmap.org/)
+
+- Possui versões com UI (Zenmap) e CLI.
+- O coração do NMap é a varredura de portas, onde os usuários designam uma lista de alvos em uma rede sobre os quais desejam obter informações.
+
+                                                 **Metasplotable:**
+
+- Distro linux com vulnerabilidades propositais para realizar testes de invasão.
+- Configuração virtualbox: rede -> host only
+- Login-senha: msfadmin
+- Verificar ip: `ifconfig`
+
+                                               **Revisão de redes:**
+
+**A - N/H 255.0.0.0/8
+B - N/H 255.255.0.0/16
+C - N/H 255.255.255.0/24**
+
+Exemplo a ser usado no tipo C:
+`nmap -v 192.168.10.0/24`
+
+- Filtrar quantidade de portas na busca:  `nmap -v -sn IP-100-200` [Quantidade que deseja visualizar]
+- Filtrar hosts específicos: `nmap -v -sn IP-100-200 | grep 192`
+- Salvar conteúdo:  `bla bla > exemplo.txt`
+`nano` => visualiza conteúdo .txt no bash
+
+---
+
+## **Encontrando portas abertas**
+
+                                **Técnicas:**
+
+- TCP: Protocolo padrão utilizado pelo nmap
+- UDP: scan no protocolo UDP (não emite resposta)
+
+---
+
+- `nmap -h` (mostra todos os comandos)
+- Filtragem portas abertas: `sudo nmap -v -sU IP -p 21,22,23,445,3306`
+[irá retornar os status dessas portas citadas].
