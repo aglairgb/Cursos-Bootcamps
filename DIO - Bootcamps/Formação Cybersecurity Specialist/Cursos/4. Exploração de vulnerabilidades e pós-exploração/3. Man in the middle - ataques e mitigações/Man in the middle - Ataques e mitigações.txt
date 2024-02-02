@@ -1,0 +1,138 @@
+# Man in the middle: Ataques e mitigações
+
+## Introdução:
+
+- Neste curso vamos falar de ataques do tipo Man in the middle, onde o atacante se posiciona entre as partes envolvidas na conexão, capturando e manipulando informações.
+
+**Percurso:**
+
+**Etapa 1**: O que é um ataque do tipo Man in the middle?
+
+**Etapa 2**: Capturando tráfego da rede.
+
+**Etapa 3**: Manipulando a rede.
+
+---
+
+## O que é um ataque do tipo Man in the middle?
+
+- Um ataque Man in the middle é um tipo de ataque de espionagem, em que os invasores interrompem uma conversa ou transferência de dados existente.
+- Depois de se inserirem no ‘meio’ da transferência, os atacantes fingem ser ambos participantes legítimos.
+
+**Objetivos:**
+
+- Interceptação de informações e dados
+- Envio de links maliciosos ou outras informações
+- Camuflado
+
+**Conceitos chaves:**
+
+- Tipo de sequestro de sessão
+- Invasores se inserem como retransmissores ou proxies em uma conexão
+- Exploração em tempo real do tráfego
+
+**Exemplos de ataques:**
+
+- Interceptação de dados
+- Acesso de senhas e roubo de fundos
+
+**Ferramentas:**
+
+- WireShark
+- Ettercap
+- Cain e Abel
+- Bettercap
+- Máquinas virtuais
+
+**Conclusão**
+
+- Man in the middle é um dos tipos de ataques mais críticos, dado o seu alto potencial de danos.
+
+---
+
+## Capturando dados da rede:
+
+- Nesta etapa vamos utilizar o WireShark para capturar dados de uma sessão.
+
+**WireShark:**
+
+- É um analisador de protocolo de rede ou um aplicativo que captura pacotes de uma conexão de rede.
+- Pacote é o nome dado a uma unidade discreta de dados em uma rede Ethernet típica.
+- O WireShark é um sniffer de rede, ou seja, é uma aplicação que lê pacotes de dados que atravessam a rede dentro da camada TCP/IP (Transmission Control Protocol/Internet Protocol).
+- Captura de pacotes: O WireShark ouve uma conexão de rede em tempo real e captura fluxos inteiros de tráfego.
+- Filtragem: O WireShark é capaz de fatiar e filtrar os dados usando filtros.
+- Visualização: Permite a visualização do conteúdo dos pacotes capturados.
+
+**Na prática:**
+
+No kali linux:
+
+- Verificar IP → `ip addr` ou `ifconfig`
+- pesquisar `IPLOCAL/dvwa/`
+- Inicializa o WireShark, aplicativo nativo do kali
+- seleciona `eth0` → `start`
+- No login adicionar → `admin`, `password`
+- No WireShark, usar o filtro por requisição: `http.request.method == ‘POST’`
+- verificar o `HTML Form URL Encoded: application/x-www-form-urlencoded` → irá está presente as credenciais que adicionou na página, pois é uma página http. A ausência do ssl não criptografa os dados.
+- filtro por IP de máquina: `ip.addr == IPLOCAL`
+
+---
+
+## Manipulando a rede:
+
+- Vamos continuar explorando ataques do tipo Man in the middle, agora utilizando recursos da ferramenta Ettercap.
+- Ettercap é um conjunto abrangente para ataques Man in the middle.
+
+**Ettercap:**
+
+- Possui sniffing de conexões ao vivo, filtragem de conteúdo em tempo real e muitos outros recursos.
+- Suporta dissecção ativa e passiva de muitos protocolos e inclui muitos recursos para análise de rede e host.
+
+**Módulos de operação:**
+
+- Baseado em IP: Os pacotes são filtrados com base na origem e destino do IP.
+- MAC: Os pacotes são filtrados com base no endereço MAC, útil para sniffing conexões através de um gateway.
+- ARP: utiliza o envenenamento ARP para sniffar em uma LAN entre dois hosts (full-duplex).
+- PublicARP: usa o envenenamento ARP para sniffar em uma LAN de um host vítima para todos os outros (half-duplex).
+
+**Prática:**
+
+- Vamos utilizar o Ettercap para realizar operações do tipo Man in the middle.
+
+**No Windows 7**
+
+- Acessar no navegador → `IPMETASPOITABLE/dvwa`
+
+**No Metaspoitable:**
+
+- Iniciar uma sessão
+
+**No Kali linux:**
+
+- Acessar root
+- `ettercap -G` (interface gráfica)
+- utilizar `eth0`
+- `Host list` → `scanear`
+- adicionar o servidor (metas) → `add to target 1`
+- adicionar o computador windows → `add to target 2`
+- opções - targets - current targets (verifica os alvos)
+- start
+
+**Definir agora qual ataque irá usar:**
+
+**No terminal:**
+
+- `echo 1 > /proc/sys/net/ipv4/ip_forward`
+
+        no ettercap:
+
+- Tipos de ataques - ARP poisoning - sniff remote connections - OK
+- start
+
+**No windows 7:**
+
+- Fazer login: admin, password
+
+**No kali linux:**
+
+- É possível capturar o tráfego, credenciais
