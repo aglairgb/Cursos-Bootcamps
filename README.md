@@ -6,12 +6,7 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)]()
 [![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)]()
 <br>
-## Em andamento:
-| Bootcamp | Carga horária | Cursos | Desafios de projetos| 
-| ------------- | ---- |----------|---------|
-| Formação Cybersecurity Specialist | 22h | 17 | 2 |
-
-## Concluído:
+## Concluídos:
 | Curso | Carga horária |
 | ------------- | ---- |
 | IFRG - JavaScript | 30h |
@@ -20,6 +15,9 @@
 | ------------- | ---- |
 | Mobile com Flutter | 89h |
 
+| Curso | Carga horária |
+| ------------- | ---- |
+| Cybersecurity Specialist | 22h |
 
 <div/>
 
