@@ -1,0 +1,16 @@
+# Entendendo um ransomware na prática com python
+
+- Nesta etapa vamos implementar um ransomware para criptografar arquivos utilizando a linguagem python.
+
+**Estrutura:**
+
+         **Arquivos do projeto:**
+
+- [encrypter.py] → código que irá criptografar os arquivos;
+- [decrypter.py] → código que irá descriptografar um arquivo previamente criptografado.
+
+**No kali:**
+
+- Deverá ter 3 arquivos: encrypter.py, decrypter.py, teste.txt
+- Ao criptografar, deve alterar o nome do teste.txt, além de criptografar o conteúdo.
+- Ao descriptografar, deve retornar o nome teste.txt com o conteúdo legível.
