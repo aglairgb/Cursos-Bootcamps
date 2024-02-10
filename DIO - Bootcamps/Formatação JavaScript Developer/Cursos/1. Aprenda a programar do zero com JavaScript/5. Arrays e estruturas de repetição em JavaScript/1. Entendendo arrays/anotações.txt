@@ -1,0 +1,9 @@
+Arrays:
+- Coleção de dados.
+- Para chamar, inicia com 0.
+
+Como adiciono um novo item em um array:
+exemplo.push(''); 
+ou
+Pode adicionar definindo a posição:
+exemplo[4] = '';
