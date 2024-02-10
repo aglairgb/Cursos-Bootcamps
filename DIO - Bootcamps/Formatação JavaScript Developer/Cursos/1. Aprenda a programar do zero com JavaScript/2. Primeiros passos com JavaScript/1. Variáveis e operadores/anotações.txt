@@ -1,0 +1,17 @@
+<Variáveis e operadores>
+  <<Apresentação inicial>>
+- Verificar versão do node instalada via terminal: node -v
+
+  <<Console e como declarar variáveis>>
+- Executar: node nomeDoArquivo.js
+- Imprimir algo: console.log('Mensagem que deseja imprimir');
+- Variáveis: espaços para armazenar valores. Tipos: let, var 
+(já não é mais usada), const. 
+
+  <<Tipos de operadores>>
+    + - * /
+----------------------------------------------------------------------------------------------
+Comentário mais de uma linha: /* Trecho ignorado */
+Comentário uma linha: //Trecho ignorado
+
+Limitando casas decimais/fractionDigits -> toFixed(numeroCasaDecimais);
