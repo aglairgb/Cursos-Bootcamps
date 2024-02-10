@@ -1,0 +1,15 @@
+<<Conceito de boolean e condicionais>>
+
+- Boolean: true or false.
+- Condicionais: Valida se uma afirmação é true or false.
+isExemplo => é utilizado o is na frente da variável para indicar ser boolean
+
+<<Tipos de operadores de igualdade>>
+
+= atribuição
+== igualdade de valor
+=== igualdade de valor/tipo
+
+<<Estrutura condicional com if e else>>
+if () {}
+! negação
