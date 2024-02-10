@@ -1,0 +1,6 @@
+for
+-> Funciona para percorrer uma quantidade específica de vezes uma lista.
+
+depuração
+- é possível observar cada detalhe de toda estrutura de seu código e execução, útil para 
+encontrar bugs e entender o seu código.
