@@ -1,0 +1,12 @@
+- Funções: Trecho de código que podemos invocá-lo:
+estrutura -> function teste() {}
+chamando -> teste()
+() parâmetro
+
+funçoes sem retorno -> procedimentos
+
+funções invocadas imediatamente/função não nomeada
+estrutura:
+(function() {
+
+})()
