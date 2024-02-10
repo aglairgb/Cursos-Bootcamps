@@ -1,0 +1,5 @@
+objeto -> É a Definição. Composto de chave e valor. Exemplo - carro, composto de [cor e ano].
+instância -> É a ocorrência. Derivada de um objeto.  Exemplo - [carro branco, 2017] é uma instância.
+constructor -> o que acontece quando uma pessoa é instanciada? Aqui podemos está configurando o padrão, 
+para quando não atribuir valores em suas chaves. Também auxilia a selecionar parâmetros obrigatórios em
+instâncias.
