@@ -1,0 +1,3 @@
+Configuração do ambiente:
+- Instalação do NodeJs;
+- Instalação do VsCode.
