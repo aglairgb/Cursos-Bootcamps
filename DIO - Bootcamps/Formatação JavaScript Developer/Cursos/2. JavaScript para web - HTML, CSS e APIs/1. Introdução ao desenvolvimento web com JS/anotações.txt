@@ -1,0 +1,14 @@
+<<Introdução>>
+- visualização do projeto que iremos construir nas demais aulas.
+
+<<Configuração do ambiente>>
+- instalação do NodeJs
+- instalação de uma biblioteca ->  npm install -g http-server
+
+- iniciando programa -> http-server ./
+
+html -> linguagem de marcação de texto
+css  -> linguagem de estilização
+
+<<Introdução ao JS voltado web>>
+- Torna web dinâmica
