@@ -1,1 +1,0 @@
-- Depurações servem tanto para encontrar erros, como para entender estruturas de repetições, por exemplo.
