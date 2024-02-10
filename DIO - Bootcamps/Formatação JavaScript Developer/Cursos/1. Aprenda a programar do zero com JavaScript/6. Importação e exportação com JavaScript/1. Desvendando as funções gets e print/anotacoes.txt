@@ -1,0 +1,16 @@
+Importação e exportação:
+
+estrutura de funções auxiliares/conteúdo exportável:
+function gets(){
+    return 10
+}
+
+function print(exemplo) {
+    console.log(exemplo);
+}
+
+module.exports = {get, print};
+
+
+como importar:
+require ('./caminhoDoGetsPrint.js')
