@@ -1,0 +1,14 @@
+objetos:
+- coleção dinâmica composta de chave e valor.
+estrutura:
+const pessoa = {
+    nome: 'Tadeu',
+    idade: 40,
+};
+chamada:
+console.log(pessoa.nome);
+console.log(pessoa.idade);
+console.log(pessoa);
+
+método -> função dentro de um objeto
+this -> é usado para chamar valores em um método.
