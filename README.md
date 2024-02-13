@@ -6,6 +6,13 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)]()
 [![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)]()
 <br>
+
+## Em andamento
+| Curso | Carga horária |
+| ------------- | ---- |
+| Formação JavaScript Developer | 39h |
+
+
 ## Concluídos:
 | Curso | Carga horária |
 | ------------- | ---- |
