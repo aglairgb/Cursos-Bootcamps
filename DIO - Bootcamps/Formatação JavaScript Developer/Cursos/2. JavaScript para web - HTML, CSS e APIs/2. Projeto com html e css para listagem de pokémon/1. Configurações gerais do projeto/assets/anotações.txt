@@ -1,0 +1,2 @@
+normalize = css que padroniza todo estilo inicial de diferentes browsers
+vamos utilizar cdn normalize css
