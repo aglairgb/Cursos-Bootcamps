@@ -1,0 +1,57 @@
+API
+Protocolo http
+-
+requisição http
+URL: http://pokeapi.co/api/v2/pokemon
+     ${Endereço}/${path = caminho de identificação do recurso}
+
+IP: http://pokeapi.com
+    http://127.0.0.1:3000
+
+Request Method: GET / POST / PUT / DELETE /
+GET  -> buscar
+POST -> inserir conteúdo
+PUT  -> atualizar
+DELETE -> deletar conteúdo
+
+query string
+buscar filtros após '?' em estrutura de chave e valor:
+?type=grass
+& concatenação 
+?type=grass&name=1
+
+Header Accept -> formatos aceitos
+Content-Type -> o que irá devolver
+
+Request Headers
+- configuração
+
+exemplo:
+  accept-language:
+  pt-BR;q=1
+  pt;q=0.9
+  en-US;q=0.8
+  en;q=0.7
+  gl;q=0.6 
+
+Response Headers
+- Configuração 
+
+BODY - corpo da requisição
+
+Request Heders
+ content-type: application/json
+
+Request Body {
+ 'name': 'Teste'
+}
+
+STATUS CODE: 200 OK
+
+Response Headers
+
+Responde body
+
+Status code: número que volta que indica status da requisição
+
+status cod dog
