@@ -1,0 +1,2 @@
+arrow function = sintaxe reduzida de uma função
+troca function por '=>'
