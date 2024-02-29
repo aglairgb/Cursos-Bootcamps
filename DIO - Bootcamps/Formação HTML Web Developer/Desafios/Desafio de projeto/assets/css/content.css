@@ -263,7 +263,6 @@ table {
 .content-contato {
     display: flex;
     margin: 1rem;
-
 }
 
 .contatos {
@@ -297,8 +296,12 @@ iframe {
 }
 
 .contatos h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-left: -2rem;
+}
+
+.contatos ul a {
+    color: black;
 }
 
 /* Responsividade */
@@ -321,7 +324,7 @@ iframe {
     }
 }
 
-@media screen and (max-width: 377px) {
+@media screen and (max-width: 378px) {
     .content-contato {
         width: 90%;
         margin-left: -2rem;
@@ -330,7 +333,39 @@ iframe {
     .header img {
         margin-left: -2rem;
     }
+
+    .bodyContato {
+        overflow-x:hidden;
+    }
 }
+
+@media screen and (max-width: 402px) {
+    .contatos h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 396px) {
+    .content-contato li {
+        font-size: 1.4rem;
+    }
+
+    .main { 
+        margin-left: -0.2rem;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .content-contato h3 {
+        font-size: 1rem;
+    }
+
+    .content-contato li {
+        font-size: 1.2rem;
+    }
+}
+
+
 
 
 
