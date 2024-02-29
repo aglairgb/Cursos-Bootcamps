@@ -20,10 +20,6 @@
 
 | Curso | Carga horária |
 | ------------- | ---- |
-| Mobile com Flutter | 89h |
-
-| Curso | Carga horária |
-| ------------- | ---- |
 | Cybersecurity Specialist | 22h |
 
 <div/>
