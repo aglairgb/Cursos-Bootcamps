@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--CSS simples para organizar o formulário-->
+    <style>
+       .row {
+        margin: 5px;;
+       } 
+
+       label {
+        width: 100px;
+        text-align: right;
+        display: inline-block;
+        padding-right: 5px;
+       }
+
+       h1 {
+        padding-left: 150px;
+       }
+
+       fieldset {
+        margin: 15px 0;
+        width: 560px;
+        border-radius: 1rem;
+        border-color: rgb(72, 65, 175);
+       }
+    </style>
+
+</head>
+<body>
+
+    <!--Anotações
+
+        <fieldset> -> isola o conteúdo em um retângulo.
+          propriedade:
+            <legend> -> determina um nome para esse campo isolado.
+    -->
+
+    <h1>Formulário de cadastro</h1>
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <div class="row">
+            <label>Nome:</label><input type="text">
+            <label>E-mail:</label><input type="text">
+        </div>
+    
+        <div class="row">
+            <label>Profissão:</label><input type="text">
+            <label>Empresa:</label><input type="text">
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Endereço</legend>
+
+        <div class="row">
+            <label>Endereço:</label><input type="text">
+            <label>Número:</label><input type="text" style="width: 30px;">
+        </div>
+    
+        <div class="row">
+            <label>Bairro:</label><input type="text">
+        </div>
+    
+        <div class="row">
+            <label>Cidade/UF:</label><input type="text">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Contato</legend>
+
+        <div class="row">
+            <label>Celular:</label><input type="text">
+            <label>WhatsApp:</label><input type="text">
+        </div>
+    
+        <div class="row">
+            <label>Linkedin:</label><input type="text">
+            <label>Github:</label><input type="text">
+        </div>
+    
+    </fieldset>
+    
+    <div class="row">
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar formulário</button>
+    </div>
+
+</body>
+</html>

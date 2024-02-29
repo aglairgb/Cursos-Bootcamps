@@ -1,0 +1,35 @@
+.menu ul {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 9rem;
+    list-style-type: none;
+    align-items: center;
+    margin-left: -2rem;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    box-shadow: 0px 4px 6px 11px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 0px 4px 6px 11px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 4px 6px 11px rgba(0,0,0,0.56);
+}
+
+fieldset a {
+    color: black;
+}
+
+.menu ul li:hover {
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}

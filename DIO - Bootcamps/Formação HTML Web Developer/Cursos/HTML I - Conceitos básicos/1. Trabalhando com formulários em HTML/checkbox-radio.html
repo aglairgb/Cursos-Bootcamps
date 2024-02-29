@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio</title>
+</head>
+<body>
+
+
+<!--Anotações
+
+    name[] -> interessante que seja colocado com colchetes para informar ao backend que se trata
+              de uma lista. Caso contrário, irá ler somente o último valor, pois irá cosiderar uma
+              variável.
+
+    disabled -> não permite que os user selecine o checkbox
+
+-->
+
+
+<form method="get">
+
+    <h1>Você selecionou: Pizza de calabresa</h1>
+    
+    <h3>Quais opções adicionais você deseja?</h3>
+    
+    <label>Queijo</label><input type="checkbox" disabled name="adicional[]" value="Queijo"> <br>
+    <label>Calabresa</label><input type="checkbox" name="adicional[]" value="Calabresa"> <br>
+    <label>Cebola</label><input type="checkbox" name="adicional[]" value="Cebola"> <br>
+    <label>Azeitona</label><input type="checkbox" name="adicional[]" value="Azeitona">
+    
+    <h3>Borda recheada?</h3>
+    
+    <label>Sim</label><input name="borda" value="sim" type="radio"> <br>
+    <label>Não</label><input name="borda"  value="não" type="radio">
+    
+    <h3>Qual bebida você deseja?</h3>
+    
+    <label>Suco</label><input name="bebida" value="Suco" type="radio"> <br>
+    <label>Refrigerante</label><input name="bebida" value="Refrigerante" type="radio"> <br>
+    <label>Água</label><input name="bebida" value="Água" type="radio"> <br>
+    <label>Nenhum</label><input name="bebida" value="Nenhum" type="radio"> <br>
+    
+    <button type="submit">Enviar Pedido</button>
+</form>
+
+</body>
+</html>

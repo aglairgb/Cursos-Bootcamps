@@ -1,0 +1,95 @@
+Percurso
+Etapa 1 : História da web
+Etapa 2 : O que são clients?
+Etapa 3 : O que são servers?
+Etapa 4 : Sobre linguagens de programação web 
+
+Objetivo geral:
+Entender um pouco da história do computador, surgimento da internet e entender como funciona toda comunicação
+quando você acessa uma página web ou utiliza um aplicativo.
+
+<<Primeiros computadores>>
+Primeiros computadores (primeira geração):
+- Harvard Mark I (1944) -> Considerado o primeiro computador.
+- Colossus (1946). (Alemanha).
+- Eniac (1946). (EUA).
+
+Origem do termo 'Bug'
+-> Nessa época, com aquecimento das máquinas, insetos pousavam encima ocasioando desconfiguração/
+prejuízo das máquinas.
+
+Segunda geração de computadores:
+(1959 a 1965)
+- Evolução das válvulas para transitores, ocasinou na diminuição do tamanho dos computadores.
+
+Terceira geração de computadores:
+(1965 a 1970)
+- Circuito integrado (diminuíram ainda mais o tamanho dos computadores)
+- Transitores
+- Capacitores
+- Resistores
+
+Quarta geração de computadores:
+(A partir de 1971 - até hoje)
+- Evoluções de 1971 até o presente.
+
+Quinta geração
+- Muitas pessoas acreditam ser as criptomoedas, inteligências artificiais, metaverso...
+
+<<Como surgiu a internet?>>
+Primeiro sistema de comunicação -> Telégrafo (Utilização do código morse)
+(1958).
+
+Joseph carl Robnett Licklider -> Teorizou sobre uma rede onde todos poderiam se comunicar através dela. 
+
+Arpanet
+-> Sistema de comunicação em pacotes, enviados um a um e que permitia múltiplos
+destinos.
+-> Estudos sobre nós. Pontos de intersecção de informações funcionando como
+'checkpoints'. Podemos dizer que é o 'avô dos roteadores';
+-> Primeira conexão estabelecida foi feita em 29.10.1969.
+
+-> Vinton Cerf, Robert Kahn -> Criaram o TCP/IP
+
+-> Em 1989, Tim Berners-Lee viu a oportunidade de unir hipertexto com TCP/IP
+e criar a World Wide Web (www) Primeiro navegador chamado WorldWideWeb.
+
+-> Primeira página web publicada: 6 de agosto de 1991.
+http://info.cern.ch/
+
+<<Grandes nomes>>
+Grace Murray Hopper
+- Marinha dos Estados Unidos
+- Uma das primeiras programadoras do Mark I em 1944
+- Criadora da linguagem de programação de alto nível Flow-Matic(Base do COBOL)
+- Termo 'bug' na computação
+
+Joseph carl Robnet Licklider
+- Recurado pela DARPA depois de teorizar sobre uma rede 'galática' de computadores.
+- Plantou a 'semente' da comunicação entre dois pontos distintos através do computador.
+
+Robert E. Kahn
+- Primeira apresentação pública da ARPANet
+- Apresentou o primeiro e-mail
+- Criador do TCP/IP
+
+Tim Berners-Lee
+- Inventor do WWW
+- Diretor do World Wide Web Consortion (W3C)
+- Diversas homenagens, incluindo título de cavaleiro dados pela Rainha Elizabeth II
+- Popularizou o HTTP e HTML
+
+Marc Andressen (cbç de ovo)
+- re(inventou) o navegador. O netscape navigator feito a partir do Mosaic
+- Torou o navegador 'amigável', com recursos gráficos
+- Deteve 90% da internet na época, mas sendo superado pelo internet explorer anos mais tarde
+
+Bill Gates
+- Fundador da Microsoft
+- Equipe da microsoft criou o internet explorer
+- Tornou acessível para todos o computador e com isso o acesso à internet
+
+Steve Jobs
+- Fundador da Apple
+- Concorrente direta da Microsoft
+- Popularizou o smartphone que conhecemos hoje através do lançameto do Iphone em 29 de junho de 2007

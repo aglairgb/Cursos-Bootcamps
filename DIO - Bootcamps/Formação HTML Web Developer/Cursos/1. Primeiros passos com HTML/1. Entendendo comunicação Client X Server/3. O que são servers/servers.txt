@@ -1,0 +1,44 @@
+<<Sobre servidores>>
+- Tende a ser um computador mais robusto, pois irá ter muito processamento.
+Tipos:
+- arquivos
+- segurança (firewall)
+- streaming
+- e-mail
+- web
+
+<<Hardwares e softwares em servidores>>
+Softwares
+- Sistemas operacionais (windows server, ubuntu, centOs...)
+- Monitoramento
+- Servidores web (apache, nginx...)
+
+Hardwares
+- Armazenamento (disco rígido, ssds)
+- Memória
+- Processadores
+
+requisição http ->   <-HTML, CSS, JS, imgs, txt
+
+<<Tipos de servidores>>
+- arquivos
+- segurança (firewall)
+- streaming
+- e-mail
+- web
+
+Servidor proxy -> Servidor que pode ser configurado limites como sites que não
+devem ser acessados pelos funcionários da empresa, por exemplo.
+Firewall -> Camada de segurança.
+Intranet -> Servidor web sem internet, chamamos de intranet.
+DNS (Domain name service) -> lista de nomes e Ips -> traduz o endereço
+www.exemplo.com e valida com o Ip requisitado
+
+
+<<Hospedagem de sites>>
+-> Disponibilizar seu site na internet para outros acessarem.
+
+registrobr -> registro nacional .com.br
+
+o FileZilla é um programa usado para transferir arquivos entre um computador local e um servidor remoto,
+incluindo atualizações de sites.

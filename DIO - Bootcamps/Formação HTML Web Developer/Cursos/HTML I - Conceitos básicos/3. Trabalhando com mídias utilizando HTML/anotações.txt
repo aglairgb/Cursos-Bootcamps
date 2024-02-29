@@ -1,0 +1,10 @@
+Percurso
+- Entendendo tags de mídia
+- Tag <img>
+- Tag <audio>
+- Tag <video>
+- Tag <track>
+- Tag <iframe>
+
+
+ mídias: áudios e imagens

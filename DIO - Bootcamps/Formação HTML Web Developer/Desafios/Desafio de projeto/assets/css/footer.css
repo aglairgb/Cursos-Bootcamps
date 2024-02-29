@@ -1,0 +1,36 @@
+.redes {
+    display: flex;
+    justify-content: center;
+    margin: 1.4rem;
+    gap: 2rem;
+    padding-bottom: 1rem;  
+}
+
+.redes svg {
+    width: 2rem;
+}
+
+.redes svg:hover {
+    margin-top: -0.5rem;
+}
+
+.sections {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sections a {
+    text-decoration: none;
+    margin-top: -2rem;
+    color: black;
+}
+
+.sections a:hover {
+    background-color: #00B9F1;
+    padding: 0.1rem;
+    border-radius: 1rem;
+}
+

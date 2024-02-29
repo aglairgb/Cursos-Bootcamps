@@ -1,0 +1,7 @@
+Percurso:
+- Tag <form>
+- Tag <input>
+- Tag <checkbox> e <radio>
+- Tag <button>
+- Tag <select>
+- Tag <textarea>

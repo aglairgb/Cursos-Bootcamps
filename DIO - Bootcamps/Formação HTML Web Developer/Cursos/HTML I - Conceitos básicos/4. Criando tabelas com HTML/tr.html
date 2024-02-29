@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table tr:nth-child(even) {
+            background-color: rgb(201, 104, 104);
+        }
+
+        table tr:hover td {
+            background-color: green;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <!--
+        tr -> table row -> linha de tabela
+
+        no css:
+        table tr:nth-child(even) {background-color: red} 
+        -> define a cor selecionada em pares.
+
+        table tr:hover td {background:cor}
+        -> define que ao passar o mouse encima da coluna (tr), a coluna (td) irá ficar com a cor selecioanda.
+    -->
+
+    <table summary="Essa tabela se refere a nome e idade de indivíduos."
+     width="250" border="1" align="center">
+        <tr>
+            <td>Nome</td>
+            <td>Idade</td>
+        </tr>
+        <tr>
+            <td>Jorge</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Luiz</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>Manoela</td>
+            <td>23</td>
+        </tr>
+    </table>
+</body>
+</html>

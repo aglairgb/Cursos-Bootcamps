@@ -1,0 +1,10 @@
+Percurso
+- Ferramentas utilizadas
+- Usando o inspetor de elementos
+- Estruturas básicas do HTML
+- Falando sobre tags
+- Atributos básicos
+- Executando uma página HTML
+- Textos
+- Listas ordenadas e não ordenadas
+- Links

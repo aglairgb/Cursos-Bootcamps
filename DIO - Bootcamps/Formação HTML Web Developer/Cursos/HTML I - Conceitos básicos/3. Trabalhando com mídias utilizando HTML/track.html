@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Track -> legendas
+
+        src = o arquivo .vtt que possui a legenda
+        kind -> subtitles = irá descrever sobre o vídeo/paisagem
+        kind -> captions = irá descrever as falas
+        kind -> chapters = divide o vídeo, entitulando o que cada parte irá ter
+
+        srclang='en' -> define a linguagem
+        Pode adicionar outras linguagens abaixo com propriedade default para qual deseja que seja a 
+        principal
+    -->
+
+    <video controls>
+    <source src="/video.mp4">
+    <track src="/legenda.vtt" kind="captions" srclang="pt-br>
+    </video>
+  
+
+</body>
+</html>

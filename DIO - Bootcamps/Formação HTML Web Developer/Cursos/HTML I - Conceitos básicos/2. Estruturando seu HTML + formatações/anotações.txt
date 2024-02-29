@@ -1,0 +1,8 @@
+Percurso:
+- Formatando textos: <strong>, <i>, <b>, <u>
+- Formatando textos: <font>
+- Tag <div> e <span>
+- Tag <fieldsets>
+- Tag <embeds>
+- Tag <inframes>
+- Resenha: sobre cores

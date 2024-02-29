@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+
+    <!--Input
+        Types:
+        Text: textos
+        (Numbers: números 
+          Propriedades:  
+            definir o valor mínimo: min="0"
+            definir o valor máximo: max="99"
+            pular numeração em determinado valor: step="5" ex: ir de 5 em 5)
+
+        range: scroll horizontal, útil para controle de áudio/brilho de tela...
+          Propriedades:
+           Mesmas de number
+           value="20" -> inicia com valor 20
+
+        color: caixa de seleção de cores
+
+        week -> como selecionar por dia da semana, similar ao data. 
+           Detalhe: Só funciona no chrome e edge.
+
+        month -> mesma coisa que week, só que mês.
+            Detalhe: Só funciona no chrome e edge.
+
+        radio -> similar ao checkbox, porém circular e geralmente utilizado
+        na ideia de ou selecionar um ou outro.
+
+        hidden -> Um campo oculto permite que os desenvolvedores da web incluam dados que
+        não podem ser vistos ou modificado pelos usuários quando um formulário é enviado.
+
+        file: para upload de arquivos
+            Detalhe: usando a propriedade 'multiple', pode selecionar vários arquivos.
+    -->
+
+
+    <form>
+        <label>Text:</label><input type="text"> <br>
+        <label>Number:</label><input type="number" min="0" max="95" step="5"> <br>
+        <label>Range:</label><input type="range"> <br>
+        <label>Color:</label><input type="color"> <br>
+        <label>E-mail:</label><input type="email"> <br>
+        <label>URL:</label><input type="url"> <br>
+        <label>Data:</label><input type="date"> <br>
+        <label>Semana:</label><input type="week"> <br>  <!--Só funciona no chrome e edge-->
+        <label>Mês:</label><input type="month"> <br>    <!--Só funciona no chrome e edge-->
+        <label>Checkbox:</label><input type="checkbox">  <input type="checkbox"> <br>
+        <label>Radio</label><input type="radio" name="aceita"> <input type="radio" name="aceita"> <br>
+        <label>File:</label><input type="file" multiple> <br>
+        <label>Search:</label><input type="search"> <br> <!--Firefox não funciona-->
+        <label>Button:</label><input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<<O que é?>>
+- Linguagem de programação é uma linguagem escrita e formal que especifica
+um conjunto de instruções e regras usadas para gerar programas (software).
+
+5 mais populares, segundo RedMonk (2012-2022):
+- JavaScript
+- Python
+- Java
+- Php
+- C#
+
+<<Server-Side>>
+- Linguagens executadas no servidor.
+Exemplos:
+- PHP
+- C#
+- JavaScript (Node)
+- Ruby
+- Java
+
+- Cada linguagem tem a sua característica.
+- Aprenda ao menos uma linguagem.
+- Prefira aquela em que a comunidade é mais engajada.
+- Experimente.
+
+<<Client-Side>>
+- Linguagens que são executadas no cliente.
+
+<<HTML não é linguagem de programação>>
+- HTML é um arquivo de marcação.
+- Textos delimitados por nomes que o navegador consegue interpretar.
+- Cada nome destes delimitadores, tem uma função e comportamento específico.
+
+Arquivo CSV também é um arquivo de marcação:
+
+Id;Nome;Idade;Email
+1;Maria Lucia;43;maria@dio.menos
+2;Jorge Almeida;23;jorge@dio.me
+
+Exemplo de HTML
+<p>
+Eu curto demais <strong><i>DIO!</i></strong>
+</p>
+-> Parágrafo que negrita a palavra 'DIO!' e deixa itálico.

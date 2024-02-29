@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+
+    <!--Tags Form
+        action -> caminho onde irá enviar o formulário    
+        method = post/get -> post mais seguro pois dados não constam na url
+        target="_blank" -> envia para outra aba
+        autocomplete =on/off -> Permite que deixe os dados dos campos salvos ao recarregar página
+        onsubmit -> evento js
+    -->
+    <form name="signup" onsubmit="alert('Enviei um formulário')" target="_blank" autocomplete="off" 
+    method="get" action="#">
+
+        Nome:  <input type="text" name="nome">   <br>
+        Idade: <input type="number" name="idade"> <br>
+        Senha: <input type="password" name="senha"> <br>
+        <button type="submit">Enviar</button>
+        
+    </form>
+</body>
+</html>

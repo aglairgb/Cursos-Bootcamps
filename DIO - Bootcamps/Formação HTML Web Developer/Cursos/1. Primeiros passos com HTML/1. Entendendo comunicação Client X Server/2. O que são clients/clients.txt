@@ -1,0 +1,23 @@
+<<Cliente no linguajar web>>
+
+Cliente -> Você consome a informação de algum lugar.
+Retorno do servidor -> Arquivos HTML, CSS JavaScript, imagens.. arquivos estáticos
+
+-> Diferentes resoluções deve ser considerado na criação de websites.
+Desig Responsivo ou Responsividade. 
+-> Também a compatibilidade entre navegadores (browsers). Realizar boas práticas e testes.
+
+<<Navegadores>>
+- São programas criados por empresas, utilizados para abrir/executar arquivos.
+- Seguem padrões W3C, porém sempre tem uma diferença ou outra de interpretação.
+- Também chamados de 'browsers'.
+- Iniciou com o MOSAIC, passou para o netscape e hoje temos uma variedade de 
+navegadores disponíveis.
+- Gratutitos.
+
+<<Aplicações web>>
+clientes -> servidores -> bancos de dados
+-> Aplicações web são soluções criadas que possuem a internet como meio de comunicação entre Client X Server
+não sendo necessário sua instalação.
+Exemplo: Facebook, Linkedin, Twiter quando acessados através do navegador.
+
