@@ -10,6 +10,7 @@
 ## Em andamento
 | Curso | Carga horária |
 | ------------- | ---- |
+| Formação HTML Web Developer | 21h |
 | Formação JavaScript Developer | 39h |
 
 
