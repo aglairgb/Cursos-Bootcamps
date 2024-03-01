@@ -1,8 +1,0 @@
-Desafio sugerido pelo instrutor:
-- Criar uma página HTML com as tags aprendidas em aula.
-
-O que foi feito:
-- Página somente com HTML que mostra 3 mulheres pioneras na tecologia.
-- Possui índices com âncoras levando a cada tópico.
-- Possui uma imagem de cada representante.
-- Possui um button em cada tópico para retornar ao home.
