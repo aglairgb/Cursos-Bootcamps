@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <!--
+        Canvas - Manipulação de gráficos.
+    -->
+
+    <p>Linha diagonal</p>
+    <canvas id="myCanvas" width="200px" height="100px"
+    style="border: solid 1px;">
+    </canvas>
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+        </script> 
+
+    <p>Círculo</p>
+    <canvas id="myCanvas2" width="200px" height="100px"
+    style="border: solid 1px;">
+    </canvas>
+
+    <script>
+        var c = document.getElementById("myCanvas2");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+        </script> 
+</body>
+</html>

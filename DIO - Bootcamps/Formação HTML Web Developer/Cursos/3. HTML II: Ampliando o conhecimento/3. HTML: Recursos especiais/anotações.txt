@@ -1,0 +1,10 @@
+Percurso:
+- <datalist>
+- <code>, <kbd>, <pre>
+- <details>, <summary>
+- <mark> (com javascript)
+- <meter>, <progress>
+- <canvas> (parte 1)
+- <canvas> (parte 2)
+- Novos atributos bem úteis no HTML5
+

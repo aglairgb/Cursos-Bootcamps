@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code, kbd, pre</title>
+</head>
+<body>
+    <!--
+        Tag específica para comandos de teclados: <kbd>
+        Tag específica para comandos como 'background-color' (feito no css): <code>
+        Tag específica para comandos maiores:  <pre>
+          
+    -->
+
+    <p>Para copiar esta informaçao, pressione <kbd>CTRL</kbd> + <kbd>C</kbd></p>
+
+    <p>Para trocar o fundo de um elemento, utilize o comando 
+       <code class="bk">background-color</code></p>
+
+    <p>Comando completo de alterar cor de fundo:</p>
+    <pre>
+        <code>
+            code {
+                background-color: #f1f1f1;
+                color: red;
+            }
+        </code>
+    </pre>
+
+
+
+
+    <style>
+        p {
+            font-size: 2rem;
+        }
+
+        .bk {
+            color: red;
+        } 
+
+        kbd {
+            border: solid 1px black;
+            padding: 0.2rem;
+        }
+
+        pre, .bk{
+            background-color: #f1f1f1;
+        }
+
+    </style>
+</body>
+</html>

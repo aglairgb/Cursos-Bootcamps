@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mark e javascript</title>
+</head>
+<body>
+
+    <!--
+        Intuito: Com JS as palavras que forem digitadas no campo
+        <input>, marcarem o texto abaixo.
+    -->
+    
+    <input type="text" id="busca"> <br>
+
+    <p id="descricao">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quasi tempora corporis labore vitae? Commodi odit nemo accusantium
+        autem harum dolorum tempore omnis adipisci facere velit quidem
+        voluptatem officia, eius iusto!</p>
+
+        <script>
+            let searchField = document.getElementById('busca'); 
+            let descriptionObject = document.getElementById('descricao');
+            let textToSearch = descriptionObject.innerHTML;
+    
+            function realizaBusca (busca) {
+                const regex = new RegExp(`(${busca})(?!(.(?!<mark>))*</mark>)+`, 'ig');
+                descriptionObject.innerHTML = textToSearch.replace(regex, `<mark>${busca}</mark>`);
+            }
+    
+            searchField.addEventListener('keyup', (e) => realizaBusca(e.target.value));
+            </script>
+</body>
+</html>

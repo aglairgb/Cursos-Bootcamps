@@ -1,0 +1,17 @@
+SEO (Search Engine Optmization - Otimização para mecanismos de buscas)
+-> Conjunto de técnicas voltadas para otimizar o posicionamento do site em
+mecanismos de buscas.
+
+GoogleBot -> Através de uma página, o robô segue os links, vai visitando e indexando.
+
+Importante ter sua página semântica para melhor leitura dos bots e consequentemente melhor
+indexação do seu site no google, por exemplo.
+
+Dicas para rankign:
+
+- Adicionar descrições relevantes, através do html:
+<meta name='description' content='Sua descrição do seu site aqui!'/>
+
+- Trabalhar com semântica.
+
+- Estudar schema.org

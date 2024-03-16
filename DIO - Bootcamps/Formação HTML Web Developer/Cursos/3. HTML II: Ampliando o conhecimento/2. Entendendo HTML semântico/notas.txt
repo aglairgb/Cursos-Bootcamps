@@ -1,0 +1,11 @@
+#Percurso
+
+- HTML Semântico
+- Melhorias nas versões do HTML
+- Acessibildiade
+- Web Scraping
+- <main>, <header>, <footer>
+- <nav>, <section>, <aside>
+- <article>, <blockquote>, <q>
+- <figure>, <figcaption>, <picture>
+- Resenha: O que é SEO?

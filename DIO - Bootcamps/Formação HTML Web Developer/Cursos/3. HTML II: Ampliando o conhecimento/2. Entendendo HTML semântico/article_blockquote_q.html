@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        article -> destino a artigos.
+        blockquote -> citações. (Ocorre uma margem na página).
+        q -> citações. (O texto fica entre aspas).
+        propriedade de q/blockquote -> cite -> endereço da citação.
+        <tine pubdate> => para adicionar datas semanticamente.
+    -->
+
+    <header></header>
+
+    <main>
+        <article> 
+            <h1>Exemplo de título</h1>
+            <p>Artigo publicado em <time pubdate>dd/mm/aa</time></p>
+            <p>Lorem ipsum dolor sit, amet consectetur</p>
+            <blockquote cite="#">
+                Exemplo de citação com blockquote.
+            </blockquote>
+            <p>Lorem ipsum dolor sit, amet consectetur</p>
+            <p>Lorem ipsum dolor sit, amet consectetur,
+                <q>exemplo de citação com q.</q> 
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur</p>
+        </article>
+    </main>
+
+    <footer></footer>
+
+    <style>
+        blockquote {
+            border-left: solid orange;
+            padding: 1rem;
+        }
+    </style>
+    
+</body>
+</html>

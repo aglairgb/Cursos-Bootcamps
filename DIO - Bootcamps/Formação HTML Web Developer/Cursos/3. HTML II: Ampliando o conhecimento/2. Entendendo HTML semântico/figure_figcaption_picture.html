@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
+
+    <!--
+        figure -> compõe imagens. Possui uma formatação própria.
+        figcaption -> descrição da imagem.
+        picture -> podemos adicionar mais de uma imagem com condições, tipo:
+        definir que a partir de certa resolução, troque a imagem.
+    -->
+
+
+<!--
+    <figure>
+        <img src="/img2.jpeg" alt="Imagem do Miles Morales">
+        <figcaption>Miles Morales</figcaption>
+    </figure>
+-->
+
+    <picture>
+        <source srcset="/img2.jpeg" media="(max-width:600px)">
+        <img src="./img3.jpeg" alt="Imagem da Teia de Seda">
+    </picture>
+
+
+    <style>
+         picture {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10rem;
+            gap: 0.5rem;
+        }
+
+         picture img {
+            width: 250px;
+            border-radius: 1rem;
+        }
+    </style>
+</body>
+
+</html>

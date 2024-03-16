@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novos atributos HTML5</title>
+</head>
+<body>
+
+    <!--
+        autofocus => foco ao campo quando carregar a página.
+        required  => mostra que campo é obrigatório.
+        disabled  => desativa um campo.
+        maxlength => delimiita quantidade de palavras no campo textarea
+        minlength => delimita quantidade de palavras no campo textarea
+        form => usado quando inputs estão fora da tag <form> e você precisa referenciar aquele form. Usa-se ID para reconhecimento.
+        contenteditable -> permiite usuário editar o conteúdo.
+    -->
+
+
+    <h1 contenteditable>Novos Atributos</h1>
+    <form method="get" id="form">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="name">
+                Nome:
+            <input type="text" id="name" name="name" autofocus required
+            placeholder="Maria">
+            </label>
+            
+            <label for="E-mail">
+                E-mail:
+                <input type="text" id="email" name="email" 
+                placeholder="maria@gmail.com" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="Endereço">
+                Endereço:
+                <input type="text" id="address" name="address"
+                placeholder="R: Tomate, N20, B: Pamonha" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Observações:</legend>
+            <textarea maxlength="100" required name="observações" id="obeservações" cols="80" 
+            rows="10" placeholder="Rouba brisa, tanto quanto Schopenhauer."></textarea>
+        </fieldset>
+
+        <button type="reset">Limpar</button>
+        <button type="submit">Salvar</button>
+    </form>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        input {
+            margin: 0.5rem;
+        }
+
+        button {
+            cursor: pointer;
+            width: 60px;
+        }
+
+    </style>
+</body>
+</html>

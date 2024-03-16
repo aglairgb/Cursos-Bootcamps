@@ -1,0 +1,50 @@
+<!--
+    Acessibilidade -> Adaptar o site para pessoas com deficiência.
+
+    A Acessibilidade é essencial para desenvolvedores e organizações que desejam
+    criar sites e gerramentas da web de alta qualidade e não excluir as pessoas
+    de usar seus pordutos e seviços.
+
+    A missão da ”iniciativa de acessibilidade da web” (WAI) é levar a web a todo o
+    seu potencial pra ser acessível, permitindo que pessoas com deficiência participem
+    igualmente na rede. 
+
+    ARIA -> Accessible rich Internet Applications
+    São atributos para acessibilidade. No console do navegador, consegues ativar o ícone de 
+    acessibilidade onde é possível visualizar o aria.
+    Hierarquia: HTML->CSS->JavaScript->ARIA
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de exemplo de acessibilidade - Imagem</title>
+</head>
+<body>
+
+    <!--Utilização do atributo 'alt' nas imagens é de suma importância para acessibilidade e prevenção
+    caso, por algum motivo, sua imagem não carregue.-->
+
+    <div>
+        <img title="Imagem da Grávida de Taubaté" src="/img.jpg" width="300px"
+        alt="Imagem da Grávida de Taubaté">
+    </div>
+
+    <style>
+       div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7rem;
+       }
+
+       img {
+        min-width: 20%;
+        border-radius: 2rem;
+       }
+    </style>
+    
+</body>
+</html>

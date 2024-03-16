@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+        section -> seçõs
+        aside -> não possui ligação com o conteúdo da seção ex: (publicidade).
+                 não usa-se parênteses no aside, pois esse conteúdo é considerado parte do principal.   
+        nav -> agrupa os links de navegação.
+        telefone -> no href -> ”tel:+551599999999” -> esse formato direciona a operação de ligar no celular, por exemplo.
+    -->
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="tel:+551598857465">Telefone</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main></main>
+    <footer></footer>
+    
+    <style>
+
+        nav {
+            display: flex; /*Horizontal*/
+            align-items: center; 
+            justify-content: center;
+            white-space: nowrap; /*Evita que quebre linha*/
+            margin: 2rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none; /*Tira os pontos da lista*/
+            flex-wrap: wrap; /*Permite que itens fiquem abaixo um do outro com a responsividade*/
+            gap: 3rem;
+        }
+
+        nav ul li a {
+            padding: 1rem;
+            text-decoration: none; /*Tira o ”__” */
+        }
+
+        nav ul li a:hover {
+            border-top:solid;
+        }
+    </style>
+
+   
+</body>
+</html>
