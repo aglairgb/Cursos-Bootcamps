@@ -1,6 +1,6 @@
 ## Desafio de Projeto 
 
-<p>Para finalizar o bootcamp, foi proposto esse desafio de projeto visando construir uma página similar a Wikipedia, com tema de nossa escolha. Decidi falar sobre filosofia. </p>
+<p>Para finalizar o bootcamp, foi proposto esse desafio de projeto visando construir uma página de artigos, com tema de nossa escolha. Decidi falar sobre filosofia. </p>
 
 <p align="center">Demo:</p>
 
