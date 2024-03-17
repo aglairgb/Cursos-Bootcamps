@@ -9,3 +9,12 @@
 </p>
 
 <p align="center"><a href="https://osroubabrisa.netlify.app/">Veja no ar</a></p>
+
+<p>Créditos:</p>
+
+- Icons/logotipo: <a href="https://www.flaticon.com/br/">Flaticon</a> <br>
+- <a href="https://tholman.com/github-corners/">GitHub Corners</a>
+- Pesquisa: <a href="https://pt.wikipedia.org/wiki/Arthur_Schopenhauer">Wikipedia</a>
+
+
+
