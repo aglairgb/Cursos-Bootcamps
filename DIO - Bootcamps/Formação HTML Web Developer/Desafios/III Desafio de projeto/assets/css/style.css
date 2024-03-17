@@ -36,7 +36,7 @@ header {
     float: left;
     width: 25%;
     border-right: dotted;
-    height: 726vh;
+    height: 798vh;
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
@@ -84,7 +84,7 @@ h1 {
 .details {
     float: right;
     width: 26%; 
-    height: 726vh;
+    height: 798vh;
     border-left: dotted;
     display: flex;
     flex-direction: column;
@@ -113,7 +113,6 @@ figcaption {
     font-size: 0.8rem;
 }
 
-
 .table-details {
     margin: 1.2rem;
     padding: 0.5rem;
@@ -128,7 +127,6 @@ figcaption {
     background-color: #f5f5f5;
 }
 
-
 main h1, p {
     display: flex;
     align-items: center;
@@ -138,7 +136,6 @@ main h1, p {
 main h1 {
     padding: 0.8rem;
 }
-
 
 main .description {
     font-size: 0.8rem;
@@ -172,13 +169,11 @@ main .description {
     white-space: nowrap;
   }
 
-
   .return img:hover {
     cursor: pointer;
     background-color: rgb(61, 61, 194);
     border-radius: 2rem;
   }
-
 
   /* Responsividade */
     @media screen and (max-width: 1203px) {
