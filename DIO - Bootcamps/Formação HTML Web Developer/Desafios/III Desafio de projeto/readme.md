@@ -8,8 +8,6 @@
   <img src="assets/imagens/demo/demo.png" alt="Descrição da imagem">
 </p>
 
-<p align="center"><a href="https://osroubabrisa.netlify.app/">Veja no ar</a></p>
-
 <p>Créditos:</p>
 
 - Icons/logotipo: <a href="https://www.flaticon.com/br/">Flaticon</a> <br>
