@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testes</title>
+    <script defer src="atv5.js"></script>
+</head>
+<body> 
+
+   <form method="get" name="dados" class="form">
+    <label>Nome:</label>
+    <input type="text" name="Nome" class="nome">
+
+    <label>Sobrenome:</label>
+    <input type="text" name="Sobrenome" class="sobrenome">
+
+    <label>Peso:</label>
+    <input type="text" name="Peso" class="peso">
+
+    <label>Altura:</label>
+    <input type="text" name="Altura" class="altura">
+
+    <button type="submit" id="submit">Enviar</button>
+    <button type="reset" id="reset" >Limpar</button>
+   </form>
+
+    <div class="resultados"></div>
+    
+   <style>
+    form {
+        display: flex;
+        margin: 3rem auto;
+        flex-direction: column;
+        width: 150px;
+        gap: 0.2rem;
+        padding: 2rem;
+        background-color: #d4b5b5;
+        border-radius: 1rem;
+    }
+
+    button {
+        margin-top: 0.5rem;
+        background-color: green;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    #reset {
+        background-color: red;
+    }
+   </style>
+</body>
+</html>
