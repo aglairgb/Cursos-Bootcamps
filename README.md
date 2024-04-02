@@ -8,23 +8,15 @@
 
 <br>
 
-## Em andamento
-<table>
-  <tr>
-    <th>Curso</th>
-    <th>Carga horária</th>
-  </tr>
-  <tr>
-    <td>Formação JavaScript Developer</td>
-    <td>39h</td>
-  </tr>
-</table>
-
 ## Concluídos:
 <table>
 <tr> 
 <th>Curso</th>
 <th>Carga Horária</th>
+</tr>
+<tr>
+  <td>Formação JavaScript Developer</td>
+  <td>39h</td>
 </tr>
 <tr>
   <td>HTML Web Developer</td>
