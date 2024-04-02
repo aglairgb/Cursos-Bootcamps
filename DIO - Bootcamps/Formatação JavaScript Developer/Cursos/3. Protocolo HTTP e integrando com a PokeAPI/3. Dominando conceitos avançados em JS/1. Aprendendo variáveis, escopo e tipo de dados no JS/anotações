@@ -1,0 +1,11 @@
+null -> ausência de valor.
+
+undefined -> indica que uma variável ou propriedade ainda não foi inicializada ou atribuída.
+
+objetos -> compostos de chave e valor.
+
+métodos -> funções dentro de objetos.
+
+hoisting -> permite a leitura de variáveis antes de sua declaração.
+
+var -> tem escopo de função enquanto let e const tem escopo de bloco.
