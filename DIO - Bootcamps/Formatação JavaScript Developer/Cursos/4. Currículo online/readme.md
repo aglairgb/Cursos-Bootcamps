@@ -2,7 +2,7 @@
 
 #### Detalhes:
 - Foi desenvolvido um portfólio com HTML, CSS e JavaScript.
-- Foi adicionado animação de slider na aba de 'Últimas conquistas'.
+- Foi adicionado animação de slide na aba de 'Últimas conquistas'.
 - Está responsivo para desktop e mobile.
 - Foi aplicado boas práticas, acompanhado com a extensão WAVE, para acessibilidade. 
 
