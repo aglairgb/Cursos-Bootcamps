@@ -1,3 +1,5 @@
+<div align="center">
+  
 # Histórico de cursos 💻
 
 Mantenho este repositório com anotações e certificados dos cursos que realizo.
@@ -20,3 +22,5 @@ Mantenho este repositório com anotações e certificados dos cursos que realizo
 | HTML Web Developer           | 21h           |
 | IFRG - JavaScript            | 30h           |
 | Cybersecurity Specialist     | 22h           |
+
+</div>
