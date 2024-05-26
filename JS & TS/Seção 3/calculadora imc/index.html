@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="/Seção 3/calculadora imc/assets/css/main.css">
+    <!--JavaScript-->
+    <script defer src="/Seção 3/calculadora imc/assets/js/main.js"></script>
+</head>
+<body>
+    <section>
+        <h1>Tabela IMC</h1>
+
+        <table id="table">
+            <tr>
+                <th>IMC</th>
+                <th>Resultado</th>
+            </tr>
+            <tr id="abaixo_do_peso">
+                <td>Menos do que 18,5</td>
+                <td>Abaixo do peso</td>
+            </tr>
+            <tr id="peso_normal">
+                <td>Entre 18,5 e 24,9</td>
+                <td>Peso normal</td>
+            </tr>
+            <tr id="sobrepeso">
+                <td>Entre 25 e 29,9</td>
+                <td>Sobrepeso</td>
+            </tr>
+            <tr id="obesidade-grau-I">
+                <td>Entre 30 e 34,9</td>
+                <td>Obesidade grau I</td>
+            </tr>
+            <tr id="obesidade-grau-II">
+                <td>Entre 35 e 39,9</td>
+                <td>Obesidade grau II</td>
+            </tr>
+            <tr id="obesidade-grau-III">
+                <td>Mais do que 40</td>
+                <td>Obesidade grau III</td>
+            </tr>
+        </table>
+
+        <h2>Calcule seu IMC</h2>
+        <form id="form">
+            <label for="Peso">Peso:</label>
+            <input type="text" id="peso" name="peso" pattern="[0-9]{1-3}\.[0-9]{2}"
+                title="Digite o peso no formato '00.00'" placeholder="00.00">
+
+            <label for="Altura">Altura:</label>
+            <input type="text" id="altura" name="altura" pattern="[0-9]{1}\.[0-9]{2}"
+                title="Digite a altura no formato '0.00'" placeholder="0.00">
+
+            <button type="submit" id="calcular">Calcular</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/aglairvta/" target="_blank">Vittorya Aglair</a>.</p>
+    </footer>
+</body>
+</html>
