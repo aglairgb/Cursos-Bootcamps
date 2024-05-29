@@ -6,3 +6,4 @@
 - [x] operador_ternario
 - [x] date
 - [x] switch_case
+- [x] exercicio_switch_date
