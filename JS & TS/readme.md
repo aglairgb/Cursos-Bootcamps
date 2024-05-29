@@ -7,3 +7,4 @@
 - [x] date
 - [x] switch_case
 - [x] exercicio_switch_date
+- [x] mais_diferencas_entre_var_let_const
