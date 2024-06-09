@@ -9,3 +9,4 @@
 - [x] exercicio_switch_date
 - [x] mais_diferencas_entre_var_let_const
 - [x] atribuicao_via_desestruturacao_arrays
+- [x] atribuicao_via_desestruturacao_objetos
