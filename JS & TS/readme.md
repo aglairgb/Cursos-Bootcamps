@@ -11,3 +11,4 @@
 - [x] atribuicao_via_desestruturacao_arrays
 - [x] atribuicao_via_desestruturacao_objetos
 - [x] for
+- [x] exercicios_com_for
