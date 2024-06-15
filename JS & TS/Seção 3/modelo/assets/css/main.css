@@ -1,69 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-color: #f5f5f5;
-    font-family: "Roboto", sans-serif;
-    color: white;
-}
-
-h1 {
-    text-align: center;
+    padding: 0.4rem;
 }
 
 section {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    padding: 1rem;
-    margin-top: 1rem;
-    background-color: rgb(2, 0, 0);
+    border: solid 1px;
     border-radius: 1rem;
-    margin-top: 2rem;
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 1rem;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-}
-
-button  {
-    margin-top: 0.2rem;
-    cursor: pointer;
-    color: red;
-    background-color: black;
-    border: none;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    background-color: #f1f1f1;
-}
-
-button:hover {
- border: solid black;
+    gap: 0.3rem;
 }
 
 input {
-    width: 150px;
-    padding: 0.4rem;
-    border: solid 1px;
+    padding: 0.3rem;
 }
 
-p {
-    border-left: 3px solid red;
-    padding-left: 0.5rem;
+button {
+    max-width: 5rem;
+    background-color:rgb(200, 101, 101);;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 0.3rem;
+}
+
+button:hover {
+    background-color: rgb(226, 155, 155);
+    cursor: pointer;
 }
 
 span {
-    color: red;
+    color: rgb(200, 101, 101);
 }
-
-
