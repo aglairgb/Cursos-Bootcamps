@@ -1,4 +1,4 @@
-const data = new Date('2024-05-02 08:00');
+const data = new Date();
 const diaNumero = data.getDay(); //[0,1,2] = domingo, segunda, terça...
 const diaTexto = converterDiaParaTexto(diaNumero);
 
