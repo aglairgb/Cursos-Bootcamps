@@ -9,7 +9,7 @@
 body {
     font-family: "Roboto", sans-serif;
     padding: 1rem;
-    background-image: url(/Seção\ 3/calculadora\ imc/assets/img/bkg.jpg);
+    /* background-image: url(); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
