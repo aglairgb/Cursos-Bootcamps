@@ -13,3 +13,4 @@
 - [x] for
 - [x] exercicios_com_for
 - [x] dom_arvore_dom
+- [x] for_in_estrutura_repeticao
