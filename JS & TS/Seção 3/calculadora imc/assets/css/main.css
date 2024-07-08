@@ -9,7 +9,7 @@
 body {
     font-family: "Roboto", sans-serif;
     padding: 1rem;
-    /* background-image: url(); */
+    background-image: url('../img/bkg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
