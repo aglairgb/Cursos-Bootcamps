@@ -18,3 +18,4 @@
 - [x] exercicio_nodelist
 - [x] while_do_while
 - [x] break_continue
+- [x] exercicio_logica_1
