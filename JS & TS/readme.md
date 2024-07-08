@@ -17,3 +17,4 @@
 - [x] for_of_estrutura_repeticao
 - [x] exercicio_nodelist
 - [x] while_do_while
+- [x] break_continue
