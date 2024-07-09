@@ -23,3 +23,4 @@
 - [x] exercicio_logica_3
 - [x] try_catch_throw
 - [x] try_catch_finally
+- [x] setInterval_setTimeout
