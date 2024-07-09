@@ -1,0 +1,17 @@
+name: Desativar Jekyll
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v2
+
+      - name: Desativar Jekyll
+        run: echo "Desativando qualquer processamento relacionado ao Jekyll"
