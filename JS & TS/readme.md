@@ -21,3 +21,4 @@
 - [x] exercicio_logica_1
 - [x] exercicio_logica_2
 - [x] exercicio_logica_3
+- [x] try_catch_throw
