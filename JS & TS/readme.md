@@ -19,3 +19,4 @@
 - [x] while_do_while
 - [x] break_continue
 - [x] exercicio_logica_1
+- [x] exercicio_logica_2
