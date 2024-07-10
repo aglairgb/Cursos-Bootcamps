@@ -24,3 +24,4 @@
 - [x] try_catch_throw
 - [x] try_catch_finally
 - [x] setInterval_setTimeout
+- [x] exercicio_setInterval
