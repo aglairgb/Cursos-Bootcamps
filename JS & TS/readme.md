@@ -1,6 +1,6 @@
 ## Progresso do curso ✅
 
-### Seção 3
+#### Seção 3
 
 - [x] if_elseif_if
 - [x] operador_ternario
@@ -25,3 +25,6 @@
 - [x] try_catch_finally
 - [x] setInterval_setTimeout
 - [x] exercicio_setInterval
+- [x] exercicio_listaTarefas
+***
+#### Seção 4
