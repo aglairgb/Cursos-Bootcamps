@@ -28,3 +28,4 @@
 - [x] exercicio_listaTarefas
 ***
 #### Seção 4
+- [x] varias_maneiras_declarar_funcoes
