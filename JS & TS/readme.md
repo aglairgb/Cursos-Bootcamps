@@ -29,6 +29,6 @@
 ***
 #### Seção 4
 - [x] varias_maneiras_declarar_funcoes
-- [x] parametros_funcao.js
-- [x] retorno_da_funcao.js
+- [x] parametros_funcao
+- [x] retorno_da_funcao
 - [x] escopo_lexico
