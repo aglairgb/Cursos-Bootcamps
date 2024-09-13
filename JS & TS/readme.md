@@ -33,3 +33,4 @@
 - [x] retorno_da_funcao
 - [x] escopo_lexico
 - [x] closures
+- [x] funcoes_de_callback
