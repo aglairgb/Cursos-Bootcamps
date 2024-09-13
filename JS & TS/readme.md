@@ -32,3 +32,4 @@
 - [x] parametros_funcao
 - [x] retorno_da_funcao
 - [x] escopo_lexico
+- [x] closures
