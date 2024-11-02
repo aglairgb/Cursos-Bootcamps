@@ -11,9 +11,11 @@ Mantenho este repositório com anotações e certificados de cursos.
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)]()
 
 ## Concluindo:
-| Curso                        | Carga Horária |
-|------------------------------|---------------|
-|JS & TS | 146h | 
+| Curso / Desafio | Carga Horária / Dia |
+|---|---|
+| JS & TS | 146h |
+| SQL - Jhonatan de Souza| ~4h | 
+| jsdba100 | 01 |
 ***
 
 ## Concluídos:
