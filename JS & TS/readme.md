@@ -34,3 +34,4 @@
 - [x] escopo_lexico
 - [x] closures
 - [x] funcoes_de_callback
+- [x] funcoes_imediatas_IIFE
