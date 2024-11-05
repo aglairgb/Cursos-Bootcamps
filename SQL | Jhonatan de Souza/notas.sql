@@ -27,3 +27,11 @@ SELECT DISTINCT Title from `Person.Person`;
 -- COUNT retorna alguma contagem
 SELECT COUNT(DISTINCT FirstName)
 FROM `Person.Person`;
+/*
+TOP   (sql server)
+LIMIT (mysql)
+- em resumo, delimitam a visibilidade de linhas
+*/
+SELECT * FROM
+`Production.Product`
+LIMIT 5;
