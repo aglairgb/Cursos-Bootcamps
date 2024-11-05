@@ -1,6 +1,10 @@
 /*
 Estou utilizando o mysql workbench, portanto foi necessário converter os
 bancos bak para sql, e isto pode ter resultado na perda de alguns dados.
+
+Importar .sql no workbench
+mysql -u seu_usuario -p seu_banco_de_dados < /caminho/para/seu_arquivo.sql
+
 */
 
 -- Exibe bancos de dados
@@ -19,4 +23,7 @@ WHERE Title IS NULL OR Title='';
 DESCRIBE `Person.Person`;
 -- backticks (``) são usados para delimitar nomes de tabelas e colunas, não valores
 -- Evita os dados duplicados
-SELECT DISTINCT Title from `Person.Person`; 
+SELECT DISTINCT Title from `Person.Person`;
+-- COUNT retorna alguma contagem
+SELECT COUNT(DISTINCT FirstName)
+FROM `Person.Person`;

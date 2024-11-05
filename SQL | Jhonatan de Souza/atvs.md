@@ -28,3 +28,21 @@
 > Um usuário chamado Peter Krebs está devendo um pagamento, consiga o email dele para que possamos enviar uma cobrança! (Você deve usar a tabela person.person e depois a tabela person.emailaddress).
 
 ![atv5](./imgs/atv5.png)
+
+## ATV6
+
+> Eu quero saber quantos produtos temos cadastrados em nossa tabela de produtos.
+
+![atv6](./imgs/atv6.png)
+
+## ATV7
+
+> Eu quero saber quantos tamanhos de produtos temos cadastrados na nossa tabela.
+
+![atv7](./imgs/atv7.png)
+
+## ATV8 
+
+> Eu quero saber quantos tamanhos diferentes de produtos eu tenho cadastrado em nossa tabela.
+
+![atv8](./imgs/atv8.png)
