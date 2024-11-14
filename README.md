@@ -15,7 +15,7 @@ Mantenho este repositório com anotações e certificados de cursos.
 |---|---|
 | JS & TS | 146h |
 | SQL - Jhonatan de Souza| ~4h | 
-| jsdba100 | 01 |
+| jsdba100 | 02 |
 ***
 
 ## Concluídos:
