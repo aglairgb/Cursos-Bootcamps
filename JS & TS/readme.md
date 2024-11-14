@@ -35,3 +35,4 @@
 - [x] closures
 - [x] funcoes_de_callback
 - [x] funcoes_imediatas_IIFE
+- [x] factory_funtions
