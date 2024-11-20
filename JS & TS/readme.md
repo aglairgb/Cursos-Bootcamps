@@ -36,3 +36,4 @@
 - [x] funcoes_de_callback
 - [x] funcoes_imediatas_IIFE
 - [x] factory_funtions
+- [x] praticando_factory_functions
