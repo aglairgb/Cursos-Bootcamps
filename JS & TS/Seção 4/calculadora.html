@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="praticando_factory_funcions.js"></script>
+</head>
+<body>
+
+<section class="container">
+    <h1>Calculadora</h1>
+
+    <table class="calculadora">
+        <tr>
+            <td colspan="4"><input type="text" class="display"></td>
+        </tr>
+        <tr>
+            <td><button class="btn btn-clear">C</button></td>
+            <td><button class="btn btn-num">(</button></td>
+            <td><button class="btn btn-num">)</button></td>
+            <td><button class="btn btn-num">/</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn btn-num">7</button></td>
+            <td><button class="btn btn-num">8</button></td>
+            <td><button class="btn btn-num">9</button></td>
+            <td><button class="btn btn-num">*</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn btn-num">4</button></td>
+            <td><button class="btn btn-num">5</button></td>
+            <td><button class="btn btn-num">6</button></td>
+            <td><button class="btn btn-num">+</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn btn-num">1</button></td>
+            <td><button class="btn btn-num">2</button></td>
+            <td><button class="btn btn-num">3</button></td>
+            <td><button class="btn btn-num">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn btn-num">.</button></td>
+            <td><button class="btn btn-num">0</button></td>
+            <td><button class="btn btn-del">&laquo;</button></td>
+            <td><button class="btn btn-eq">=</button></td>
+        </tr>
+    </table>
+</section>
+
+
+<style>
+    button {
+        width: 5rem;
+        height: 4rem;
+        cursor: pointer;
+        border: none;
+        border-radius: 0.5rem;
+    }
+    
+    input {
+        width: 98%;
+        height: 2rem;
+    }
+
+    section {
+        border: solid;
+        border-radius: 1rem;
+        max-width: 400px;
+        margin: 3rem auto;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .calculadora {
+        display: flex;
+        justify-content: center;
+    }
+
+    input {
+        font-size: 1.5rem;
+        text-align: right;
+    }
+
+    .btn-eq{
+        background-color: royalblue;
+    }
+</style>
+</body>
+</html>
