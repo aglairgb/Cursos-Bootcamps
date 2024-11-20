@@ -21,3 +21,15 @@
 | 02 | DBA | Count. | 3 |
 
 ---
+
+> 19/11/2024
+
+ Dia | Conteúdo | Estudado hoje | Exercícios realizados |
+|---|---|---|---|
+| 03 | Javascript | Exercícios de factory functions. | 3 |
+
+| Dia | Conteúdo | Estudado hoje | Exercícios realizados |
+|---|---|---|---|
+| 03 | DBA | Top. | 0 |
+
+---
