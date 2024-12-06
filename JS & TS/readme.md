@@ -37,3 +37,4 @@
 - [x] funcoes_imediatas_IIFE
 - [x] factory_functions
 - [x] praticando_factory_functions
+- [x] funcoes_construtoras
