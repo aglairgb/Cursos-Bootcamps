@@ -39,3 +39,4 @@
 - [x] praticando_factory_functions
 - [x] funcoes_construtoras
 - [x] calculadora_funcao_construtora
+- [x] funcoes_recursivas
