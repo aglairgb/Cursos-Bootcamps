@@ -38,3 +38,4 @@
 - [x] factory_functions
 - [x] praticando_factory_functions
 - [x] funcoes_construtoras
+- [x] calculadora_funcao_construtora
