@@ -40,3 +40,4 @@
 - [x] funcoes_construtoras
 - [x] calculadora_funcao_construtora
 - [x] funcoes_recursivas
+- [x] funcoes_geradoras
