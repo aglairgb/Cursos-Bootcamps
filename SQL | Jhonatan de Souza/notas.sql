@@ -35,3 +35,8 @@ LIMIT (mysql)
 SELECT * FROM
 `Production.Product`
 LIMIT 5;
+-- Verificar permissões de usuários
+SHOW GRANTS FOR 'teste'@'localhost';
+-- Conceder total de permissões
+GRANT ALL PRIVILEGES ON *.* TO 'teste'@'localhost' WITH GRAND OPTION;
+FLUSH PRIVILEGES;
